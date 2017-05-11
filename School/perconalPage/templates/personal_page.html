@@ -1,0 +1,67 @@
+{% extends 'main.html' %}
+{% load staticfiles %}
+{% block title %} <title>Contact - Twenty by HTML5 UP</title> {% endblock %}
+	<!--<body class="contact">-->
+
+{% block content %}
+			<!-- Main -->
+				<article id="main">
+
+					<header class="special container">
+						
+						<h2><strong> Profile </strong></h2>
+				
+					</header>
+
+					<!-- One -->
+						<section class="wrapper style4 special container 75%">
+
+							<!-- Content -->
+								<div class="row">
+								<div class="4u box">
+									{% if userApply.image %}
+									<img src="{{ userApply.image.url }}" width="100%" height="auto">
+									{% else %}
+									<img src="{% static 'assets/images/qa.png'%}" width="100%" height="auto">
+									{% endif %}
+
+									<!--<span class="change_pic">-->
+										<!--<a href="#" class="change">Change</a>-->
+									<!--</span>-->
+                                     {% if user.is_authenticated %}
+                                         {% if not correctUser %}
+                                            <span class="edit">
+										        <a href="/messages/compose/{{ userApply.name }}/" class="change"> Write message</a>
+									        </span>
+                                         {% endif %}
+                                     {% else %}
+                                     {% endif %}
+									{% if correctUser %}
+									<span class="edit">
+										<a href="/profile/edit/{{ userApply.id }}" class="change"> Edit profile</a>
+									</span>
+									{% endif %}
+
+
+
+								</div>
+								<div class="7u profile">
+									<h2> {{ userApply.name }}</h2>
+									<!--<p> participant </p>-->
+							
+									<ul>
+										<li> <strong> Activity: </strong> <i> {{ userApply.placeOfWorkOrStudy }}, {{ userApply.speciality }}  </i>  </li><br>
+										<li> <strong>  Age: </strong> <i> {{ userApply.dateOfBirth }} </i> </li> <br>
+										<li> <strong>  From: </strong> <i> {{ userApply.city }}, {{ userApply.country }}  </i> </li> <br>
+										<li> <strong>  Project: </strong> <i> 	Using Neural Networks for Diabetic Retinopathy Detection in Eye Images  </i></li><br> 
+									</ul>
+								</div>
+
+
+									
+								</div>
+
+						</section>
+
+				</article>
+{% endblock %}

@@ -1,0 +1,178 @@
+{% extends 'main.html' %}
+<!--<body class="contact">-->
+{% load staticfiles %}
+{% block title %}<title>Contact - Twenty by HTML5 UP</title>{% endblock %}
+
+{% block content %}
+			<!-- Main -->
+				<article id="main">
+
+					<header class="special container">
+
+						<h2><strong> Test </strong></h2>
+
+					</header>
+
+					<!-- One -->
+						<section class="wrapper style4 special container 75%">
+
+							<!-- Content -->
+								<div class="content">
+									<form action="" method="post">
+										{% for subject in questions %}
+
+											<h2><strong> {{ subject.0.subject }} </strong></h2>
+
+											{% for question in subject %}
+											<div class="test_item">
+												<label for="test_variant">{{ question.question }}</label>
+
+                                                {% for answers in question.answers %}
+												<br>
+												<br>
+												<label for="test_variant">
+													<input  id="test_variant" type="radio" name="{{ question.id }}" autocomplete="off" value="{{ answers }}"/> {{ answers }}
+												</label>
+                                                {% endfor %}
+
+												<br>
+												<br>
+												 <input  id="test_variant" type="radio" name="{{ question.id }}" autocomplete="off" value="{{ question.answers.0 }}" style=" display: none; " checked/>
+												<br>
+
+
+											</div>
+										<br>
+										{% endfor %}
+										{% endfor %}
+
+
+
+											<!--<div class="test_item">-->
+												<!--<label for="test_variant">If the average of 7d and 11d is 54, what is the value of d?</label>-->
+												<!--<br>-->
+												<!--<label for="test_variant">-->
+													<!--<input  id="test_variant" type="radio" name="variant" autocomplete="off"/> 6-->
+												<!--</label>-->
+												<!--<br>-->
+												<!--<label for="test_variant">-->
+													<!--<input  id="test_variant" type="radio" name="variant" autocomplete="off"/> 12-->
+												<!--</label>-->
+												<!--<br>-->
+												<!--<label for="test_variant">-->
+													<!--<input  id="test_variant" type="radio" name="variant" autocomplete="off"/> 3-->
+												<!--</label>-->
+												<!--<br>-->
+												<!--<label for="test_variant">-->
+													<!--<input  id="test_variant" type="radio" name="variant" autocomplete="off"/> 27-->
+												<!--</label>-->
+												<!--<br>-->
+												<!--<label for="test_variant">-->
+													<!--<input  id="test_variant" type="radio" name="variant" autocomplete="off"/> 2-->
+												<!--</label>-->
+												<!--<br>-->
+
+											<!--</div>-->
+											<!--<br>-->
+
+
+											<!--<div class="test_item">-->
+												<!--<label for="test_variant">If the average of 7d and 11d is 54, what is the value of d?</label>-->
+												<!--<br>-->
+												<!--<label for="test_variant">-->
+													<!--<input  id="test_variant" type="radio" name="variant" autocomplete="off"/> 6-->
+												<!--</label>-->
+												<!--<br>-->
+												<!--<label for="test_variant">-->
+													<!--<input  id="test_variant" type="radio" name="variant" autocomplete="off"/> 12-->
+												<!--</label>-->
+												<!--<br>-->
+												<!--<label for="test_variant">-->
+													<!--<input  id="test_variant" type="radio" name="variant" autocomplete="off"/> 3-->
+												<!--</label>-->
+												<!--<br>-->
+												<!--<label for="test_variant">-->
+													<!--<input  id="test_variant" type="radio" name="variant" autocomplete="off"/> 27-->
+												<!--</label>-->
+												<!--<br>-->
+												<!--<label for="test_variant">-->
+													<!--<input  id="test_variant" type="radio" name="variant" autocomplete="off"/> 2-->
+												<!--</label>-->
+												<!--<br>-->
+
+											<!--</div>-->
+											<!--<br>-->
+
+
+
+											<!--<div class="test_item">-->
+												<!--<label for="test_variant">If the average of 7d and 11d is 54, what is the value of d?</label>-->
+												<!--<br>-->
+												<!--<label for="test_variant">-->
+													<!--<input  id="test_variant" type="radio" name="variant" autocomplete="off"/> 6-->
+												<!--</label>-->
+												<!--<br>-->
+												<!--<label for="test_variant">-->
+													<!--<input  id="test_variant" type="radio" name="variant" autocomplete="off"/> 12-->
+												<!--</label>-->
+												<!--<br>-->
+												<!--<label for="test_variant">-->
+													<!--<input  id="test_variant" type="radio" name="variant" autocomplete="off"/> 3-->
+												<!--</label>-->
+												<!--<br>-->
+												<!--<label for="test_variant">-->
+													<!--<input  id="test_variant" type="radio" name="variant" autocomplete="off"/> 27-->
+												<!--</label>-->
+												<!--<br>-->
+												<!--<label for="test_variant">-->
+													<!--<input  id="test_variant" type="radio" name="variant" autocomplete="off"/> 2-->
+												<!--</label>-->
+												<!--<br>-->
+
+											<!--</div>-->
+											<!--<br>-->
+
+
+
+											<!--<div class="test_item">-->
+												<!--<label for="test_variant">If the average of 7d and 11d is 54, what is the value of d?</label>-->
+												<!--<br>-->
+												<!--<label for="test_variant">-->
+													<!--<input  id="test_variant" type="radio" name="variant" autocomplete="off"/> 6-->
+												<!--</label>-->
+												<!--<br>-->
+												<!--<label for="test_variant">-->
+													<!--<input  id="test_variant" type="radio" name="variant" autocomplete="off"/> 12-->
+												<!--</label>-->
+												<!--<br>-->
+												<!--<label for="test_variant">-->
+													<!--<input  id="test_variant" type="radio" name="variant" autocomplete="off"/> 3-->
+												<!--</label>-->
+												<!--<br>-->
+												<!--<label for="test_variant">-->
+													<!--<input  id="test_variant" type="radio" name="variant" autocomplete="off"/> 27-->
+												<!--</label>-->
+												<!--<br>-->
+												<!--<label for="test_variant">-->
+													<!--<input  id="test_variant" type="radio" name="variant" autocomplete="off"/> 2-->
+												<!--</label>-->
+												<!--<br>-->
+
+											<!--</div>-->
+											<!--<br>-->
+
+
+
+
+											<ul class="buttons">
+													<li> <input type="submit" class="special" value="Send"/> </li>
+											</ul>
+											<br>
+
+									</form>
+								</div>
+
+						</section>
+
+				</article>
+			{% endblock %}

@@ -1,0 +1,142 @@
+{% extends 'main.html' %}
+{% load staticfiles %}
+{% block content %}
+			<!-- Main -->
+				<article id="main">
+
+					<header class="special container">
+						<div class="8u -2u">
+						<h2><strong> {{ project.project_name }} </strong></h2>
+						</div>
+				
+					</header>
+
+					<!-- One -->
+						<section class="wrapper style4 container 80%">
+
+							<!-- Content -->
+								<div class="content">
+								<center><img src="{{ project.image.url }}" width="80%"></center>
+									{{ project.description|safe }}
+									<!--<h3>-->
+										<!--Abstract:-->
+									<!--</h3>-->
+									<!--<p>-->
+									<!--Currently, detecting DR is a time-consuming and manual process that requires a trained clinician to examine and evaluate digital color fundus photographs of the retina. By the time human readers submit their reviews, often a day or two later, the delayed results lead to lost follow up, miscommunication, and delayed treatment (from http://www.kaggle.com/c/diabetic-retinopathy-detection).-->
+
+									<!--</p>-->
+
+									<!--<h3>-->
+										<!--Project prerequisites:-->
+									<!--</h3>-->
+									<!--<div class="list">-->
+										<!--<ul >-->
+											<!--<li>Matrix/vector arithmetics </li>-->
+											<!--<li><div>Introduction to machine learning:-->
+												<!--<ul>-->
+													<!--<li>Classification/regression (hands on some basic classifiers)</li>-->
+													<!--<li>Cost function optimization (gradient descent)</li>-->
+													<!--<li>Cross validation techniques (leave-one-out cross validation, ten-fold cross validation)</li>-->
+													<!--<li>Overfitting/underfitting</li>-->
+													<!--<li>Parameters tuning (grid search/random search)</li>-->
+													<!--<li>Model evaluation</li>-->
+												<!--</ul>-->
+												<!--</div>-->
+												<!--</li>-->
+											<!--<li>Programming language: Python</li>-->
+											<!--<li>Introduction to Neural Networks</li>-->
+										<!--</ul>-->
+									<!--</div>-->
+
+									<!--<h3>-->
+									<!--Associated topics:-->
+									<!--</h3>-->
+
+									<!--<p> Image classification, neural networks, cost function optimization, parameters tuning, comparing models </p>-->
+
+									<p><h3>About lecturer:</h3></p>
+									<div class="row mentor_in_project">
+{#									<div class="3u 5u(narrower)">#}
+{##}
+{#									<img src="{{ project.mentor_image.url }}" width="100" height="100">#}
+{#									</div>#}
+									<div>
+										{{ project.mentor_description|safe }}
+									</div>
+
+									</div>
+
+								</div>
+
+							<div><a href="/listofmembers/list/{{project.id}}">Members of project</a>
+							<p>
+							<a href="/newsproject/">Personal news</a></div>
+						</section>
+
+<!-- Тут повинні просто бути посилання на інші якість проекти, як новини в мініатюрах -->
+
+
+						<section class="wrapper style1 container special">
+							<div class="row">
+								<div class="4u 12u(narrower)">
+
+									<section class="recommend">
+
+										<header>
+											<h4>	Smart Career Planning and Skill Development via Personal Analytics</h4>
+										</header>
+										<img src="images/P2.jpg" width="100%">
+										<p>Oleksandr Romanko</p>
+										
+										<footer>
+											<ul class="buttons">
+												<li><a href="#" class="button small">Learn More</a></li>
+											</ul>
+										</footer>
+									</section>
+
+								</div>
+								<div class="4u 12u(narrower)">
+
+									<section class="recommend">
+
+										<header>
+											<h4>	Plasticity of Neural Circuits and Neurobiology of Learning</h4>
+										</header>
+										<img src="images/P3.jpg" width="100%">
+										<p>Jenia Jhitsev </p>
+										
+										<footer>
+											<ul class="buttons">
+												<li><a href="#" class="button small">Learn More</a></li>
+											</ul>
+										</footer>
+									</section>
+
+								</div>
+								<div class="4u 12u(narrower)">
+
+									<section class="recommend">
+
+										<header>
+											<h4>	Creating a virtual reality object </h4>
+										</header>
+										<img src="images/P4.jpg" width="100%">
+										<p>Dmytro Biriukov</p>
+										
+										<footer>
+											<ul class="buttons">
+												<li><a href="#" class="button small">Learn More</a></li>
+											</ul>
+										</footer>
+									</section>
+
+								</div>
+
+								
+							</div>
+						</section>
+
+
+				</article>
+{% endblock %}

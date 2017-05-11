@@ -1,0 +1,163 @@
+{% extends 'main.html' %}
+<!-- <body class="contact"> -->
+{% load staticfiles %}
+{% block title %}<title>Contact - Twenty by HTML5 UP</title>{% endblock %}
+			<!-- Main -->
+
+{% block banner %}
+				<article id="main">
+					<header class="special container">
+						<span class="icon fa-envelope"></span>
+						<h2><strong> Apply </strong></h2>
+					</header>
+{% endblock %}
+{% block content %}
+					<!-- One -->
+							<section class="wrapper style4 special container 75%">
+
+							<!-- Content -->
+								<div class="content">
+
+									{% if form.errors %}
+        								<p style="color: red;">
+           									 Please correct the error{{ form.errors|pluralize }} below.
+        								</p>
+    								{% endif %}
+
+									<form action="" method="post" name="formApplyHTML" enctype="multipart/form-data">
+										{% for field in form %}
+
+											{% if field.html_name == motivationMessage or field.html_name == dateOfBirth%}
+												<div class="12u">
+											{% else %}
+											<div class="6u 12u(mobile)">
+											{% endif %}
+											{{ field.label_tag }} {{field.errors}}
+											{% if field.html_name == gender %}
+												<br>
+											{% endif %}
+												{{ field }}
+											</div>
+											<br>
+										{% endfor %}
+											<h3>Please select priority of the projects you want to be</h3>
+													<p>
+										{% for project in projects %}
+													<div class="12u">
+														{{ project.project_name }}
+															<select name = '{{ project.project_name }}'>
+																{% for i in rangeSubjects %}
+																<option value="{{ i }}"> {{ i }} </option>>
+																{% endfor %}
+															</select>
+													</div>
+													<br>
+
+										{% endfor %}
+
+										<!--<div class="6u 12u(mobile)">-->
+												<!--<label for="apply_fname">First name <strong>*</strong></label>-->
+												<!--<input  id="apply_fname" type="text" name="fname" placeholder="Ivanna" />-->
+												<!--<br>-->
+
+											<!--</div>-->
+											<!--<div class="6u 12u(mobile)">-->
+												<!--<label for="apply_lname">Last name <strong>*</strong></label>-->
+												<!--<input  id="apply_lname" type="text" name="lname" placeholder="Diachuk" />-->
+												<!--<br>-->
+											<!--</div>-->
+
+											<!--<div class="6u 12u(mobile)">-->
+												<!--<label for="apply_gender">Gender <strong>*</strong></label>-->
+												<!--<br>-->
+												<!--<label for="apply_gender">-->
+													<!--<input  id="apply_gender" type="radio" name="gender" autocomplete="off" /> Male-->
+												<!--</label>-->
+												<!--<br>-->
+												<!--<label for="apply_gender">-->
+													<!--<input  id="apply_gender" type="radio" name="gender" autocomplete="off"/> Female-->
+												<!--</label>-->
+												<!--<br>-->
+
+											<!--</div>-->
+											<!--<br>-->
+											<!--<div class="6u 12u(mobile)">-->
+												<!--<label for="apply_birth"> Date of birth <strong>*</strong></label>-->
+												<!--<input  id="apply_birth" type="date" name="birth" />-->
+
+											<!--</div>-->
+											<!--<br>-->
+											<!--<div class="6u 12u(mobile)">-->
+												<!--<label for="apply_country">Country of citizenship <strong>*</strong></label>-->
+												<!--<input  id="apply_country" type="text" name="country" placeholder="Ukraine" list="apply_country1" />-->
+												<!--<datalist id="apply_country1">-->
+  													<!--<option value="UK">-->
+ 				 									<!--<option value="Poland">-->
+ 				 									<!--<option value="Austria">-->
+ 				 									<!--<option value="France">-->
+ 				 									<!--<option value="Ukraine">-->
+ 				 									<!--<option value="Germany">-->
+
+												<!--</datalist>-->
+
+
+
+											<!--</div>-->
+											<!--<br>-->
+
+											<!--<div class="6u 12u(mobile)">-->
+												<!--<label for="apply_city">Current city <strong>*</strong></label>-->
+												<!--<input  id="apply_city" type="text" name="city" placeholder="Kyiv" list="apply_city1" />-->
+
+												<!--<datalist id="apply_city1">-->
+  													<!--<option value="Kyiv">-->
+ 				 									<!--<option value="Kovel">-->
+ 				 									<!--<option value="Zhytomyr">-->
+ 				 									<!--<option value="Lviv">-->
+ 				 									<!--<option value="Lutsk">-->
+ 				 									<!--<option value="Sumy">-->
+
+												<!--</datalist>-->
+
+											<!--</div>-->
+											<!--<br>-->
+											<!--<div class="6u 12u(mobile)">-->
+												<!--<label for="apply_email">Email <strong>*</strong></label>-->
+												<!--<input  id="apply_email" type="email" name="lname" placeholder="blavla@gmail.com" />-->
+
+											<!--</div>-->
+											<!--<br>-->
+											<!--<div class="6u 12u(mobile)">-->
+												<!--<label for="apply_work">Place of work/study <strong>*</strong></label>-->
+												<!--<input  id="apply_work" type="text" name="work" placeholder="KPI" />-->
+
+											<!--</div>-->
+											<!--<br>-->
+											<!--<div class="6u 12u(mobile)">-->
+												<!--<label for="apply_spec">Speciality <strong>*</strong></label>-->
+												<!--<input  id="apply_spec" type="text" name="wspec" placeholder="Computer science" />-->
+
+											<!--</div>-->
+
+
+										<!--<br>-->
+
+											<!--<div class="12u">-->
+												<!--<label for="apply_motivation">Why do you want became a participant? <strong>*</strong></label>-->
+												<!--<textarea id="apply_motivation" name="motivation" placeholder="Becouse" rows="7"></textarea>-->
+											<!--</div>-->
+										<!--<br>-->
+										<!--<div class="row">-->
+											<div class="12u">
+												<ul class="buttons">
+													<li> <input type="submit" class="special" value="Save" /> </li>
+													<!--onclick="window.location.href='../../../templates/index.html'"-->
+												</ul>
+											</div>
+									</form>
+								</div>
+
+							</section>
+				</article>
+{% endblock %}
+

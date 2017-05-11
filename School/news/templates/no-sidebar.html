@@ -1,0 +1,84 @@
+{% extends 'main.html' %}
+<!--  <body class="no-sidebar"> -->
+{% load staticfiles %}
+{% block title %}<title>No Sidebar - Twenty by HTML5 UP</title>{% endblock %}
+			<!-- Main -->
+
+{% block banner %}
+				<article id="main">
+				<header class="special container">
+						<span class="icon fa-mobile"></span>
+						<h2>And finally there's <strong>No Sidebar</strong></h2>
+						<p>Where that in the center faces the nameless horrors alone.</p>
+					</header>
+{% endblock %}
+{% block content %}
+				<!-- One -->
+				<section class="wrapper style4 container">
+
+							<!-- Content -->
+								<div class="content">
+									<section>
+										<a href="{{ news.id }}" class="image featured"><img src="{{ news.image.url }}" alt="" /></a>
+										<header>
+											<h3>{{ news.title }}</h3>
+										</header>
+										<p>{{ news.text|safe }}</p>
+									</section>
+								</div>
+
+						</section>
+{% endblock %}
+{% block afterbody %}
+				<!-- Two -->
+				<section class="wrapper style1 container special">
+							<div class="row">
+								<div class="4u 12u(narrower)">
+
+									<section>
+										<header>
+											<h3>This is Something</h3>
+										</header>
+										<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
+										<footer>
+											<ul class="buttons">
+												<li><a href="#" class="button small">Learn More</a></li>
+											</ul>
+										</footer>
+									</section>
+
+								</div>
+								<div class="4u 12u(narrower)">
+
+									<section>
+										<header>
+											<h3>Also Something</h3>
+										</header>
+										<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
+										<footer>
+											<ul class="buttons">
+												<li><a href="#" class="button small">Learn More</a></li>
+											</ul>
+										</footer>
+									</section>
+
+								</div>
+								<div class="4u 12u(narrower)">
+
+									<section>
+										<header>
+											<h3>Probably Something</h3>
+										</header>
+										<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
+										<footer>
+											<ul class="buttons">
+												<li><a href="#" class="button small">Learn More</a></li>
+											</ul>
+										</footer>
+									</section>
+
+								</div>
+							</div>
+						</section>
+				</article>
+{% endblock %}

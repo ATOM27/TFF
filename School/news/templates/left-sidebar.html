@@ -1,0 +1,121 @@
+{% extends 'main.html' %}
+{% load staticfiles %}
+{% block title %} <title>Left Sidebar - Twenty by HTML5 UP</title> {% endblock %}
+	<!--<body class="left-sidebar">-->
+
+			<!-- Main -->
+
+{% block banner %}
+					<article id="main">
+					<header class="special container">
+						<span class="icon fa-laptop"></span>
+						<h2>Behold the <strong>Left Sidebar</strong></h2>
+						<p>Where things on the left ... accompany that on the right.</p>
+					</header>
+{% endblock %}
+{% block content %}
+					<!-- One -->
+						<section class="wrapper style4 container">
+
+							<div class="row 150%">
+								<div class="4u 12u(narrower)">
+
+									<!-- Sidebar -->
+										<div    class="sidebar">
+											<section>
+												<header>
+													<h3>{{ other_news.0.title }}</h3>
+												</header>
+												<p>{{ other_news.0.get_short_text|safe }}</p>
+												<footer>
+													<ul class="buttons">
+														<li><a href="{{ other_news.0.id }}" class="button small">Learn More</a></li>
+													</ul>
+												</footer>
+											</section>
+
+											<section>
+												<a href="{{ other_news.1.id }}" class="image featured"><img src="{{ other_news.1.image.url }}" alt="" /></a>
+												<header>
+													<h3>{{ other_news.1.title }}</h3>
+												</header>
+												<p>{{ other_news.1.get_short_text|safe }}</p>
+												<footer>
+													<ul class="buttons">
+														<li><a href="{{ other_news.1.id }}" class="button small">Learn More</a></li>
+													</ul>
+												</footer>
+											</section>
+										</div>
+
+								</div>
+								<div class="8u 12u(narrower) important(narrower)">
+
+									<!-- Content -->
+										<div class="content">
+											<section>
+												<a href="{{ news.id }}" class="image featured"><img src="{{ news.image.url }}" alt="" /></a>
+												<header>
+													<h3>{{ news.title }}</h3>
+												</header>
+												<p> {{ news.text|safe }}</p>
+											</section>
+										</div>
+
+								</div>
+							</div>
+						</section>
+{% endblock %}
+{% block afterbody %}
+					<!-- Two -->
+						<section class="wrapper style1 container special">
+							<div class="row">
+								<div class="4u 12u(narrower)">
+
+									<section>
+										<header>
+											<h3>This is Something</h3>
+										</header>
+										<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
+										<footer>
+											<ul class="buttons">
+												<li><a href="#" class="button small">Learn More</a></li>
+											</ul>
+										</footer>
+									</section>
+
+								</div>
+								<div class="4u 12u(narrower)">
+
+									<section>
+										<header>
+											<h3>Also Something</h3>
+										</header>
+										<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
+										<footer>
+											<ul class="buttons">
+												<li><a href="#" class="button small">Learn More</a></li>
+											</ul>
+										</footer>
+									</section>
+
+								</div>
+								<div class="4u 12u(narrower)">
+
+									<section>
+										<header>
+											<h3>Probably Something</h3>
+										</header>
+										<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
+										<footer>
+											<ul class="buttons">
+												<li><a href="#" class="button small">Learn More</a></li>
+											</ul>
+										</footer>
+									</section>
+
+								</div>
+							</div>
+						</section>
+						</article>
+{% endblock %}
