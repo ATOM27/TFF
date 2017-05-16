@@ -1,0 +1,61 @@
+{% extends 'main.html' %}
+{% load staticfiles %}
+{% block content %}
+			<!-- Main -->
+				<article id="main">
+
+					<header class="special container">
+						<div class="8u -2u">
+						<h2><strong> About Us </strong></h2>
+						</div>
+				
+					</header>
+
+					<!-- One -->
+						<section class="wrapper style4 container 80%">
+
+							<!-- Content -->
+								<div class="content">
+								<center><img src="{{ data.image.url }}" width="80%"></center>
+									{{ data.description|safe }}
+									<!--<h3>-->
+										<!--Abstract:-->
+									<!--</h3>-->
+									<!--<p>-->
+									<!--Currently, detecting DR is a time-consuming and manual process that requires a trained clinician to examine and evaluate digital color fundus photographs of the retina. By the time human readers submit their reviews, often a day or two later, the delayed results lead to lost follow up, miscommunication, and delayed treatment (from http://www.kaggle.com/c/diabetic-retinopathy-detection).-->
+
+									<!--</p>-->
+
+									<!--<h3>-->
+										<!--Project prerequisites:-->
+									<!--</h3>-->
+									<!--<div class="list">-->
+										<!--<ul >-->
+											<!--<li>Matrix/vector arithmetics </li>-->
+											<!--<li><div>Introduction to machine learning:-->
+												<!--<ul>-->
+													<!--<li>Classification/regression (hands on some basic classifiers)</li>-->
+													<!--<li>Cost function optimization (gradient descent)</li>-->
+													<!--<li>Cross validation techniques (leave-one-out cross validation, ten-fold cross validation)</li>-->
+													<!--<li>Overfitting/underfitting</li>-->
+													<!--<li>Parameters tuning (grid search/random search)</li>-->
+													<!--<li>Model evaluation</li>-->
+												<!--</ul>-->
+												<!--</div>-->
+												<!--</li>-->
+											<!--<li>Programming language: Python</li>-->
+											<!--<li>Introduction to Neural Networks</li>-->
+										<!--</ul>-->
+									<!--</div>-->
+
+									<!--<h3>-->
+									<!--Associated topics:-->
+									<!--</h3>-->
+
+									<!--<p> Image classification, neural networks, cost function optimization, parameters tuning, comparing models </p>-->
+
+
+						</section>
+
+				</article>
+{% endblock %}

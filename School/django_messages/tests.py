@@ -20,13 +20,13 @@ class SendTestCase(TestCase):
         self.user2 = User.objects.create_user(
             'user2', 'user2@example.com', '123456')
         self.msg1 = Message(sender=self.user1, recipient=self.user2,
-                            subject='Subject Text', body='Body Text')
+                            subject='Subjects Text', body='Body Text')
         self.msg1.save()
 
     def testBasic(self):
         self.assertEqual(self.msg1.sender, self.user1)
         self.assertEqual(self.msg1.recipient, self.user2)
-        self.assertEqual(self.msg1.subject, 'Subject Text')
+        self.assertEqual(self.msg1.subject, 'Subjects Text')
         self.assertEqual(self.msg1.body, 'Body Text')
         self.assertEqual(self.user1.sent_messages.count(), 1)
         self.assertEqual(self.user1.received_messages.count(), 0)
@@ -41,9 +41,9 @@ class DeleteTestCase(TestCase):
         self.user2 = User.objects.create_user(
             'user4', 'user4@example.com', '123456')
         self.msg1 = Message(sender=self.user1, recipient=self.user2,
-                            subject='Subject Text 1', body='Body Text 1')
+                            subject='Subjects Text 1', body='Body Text 1')
         self.msg2 = Message(sender=self.user1, recipient=self.user2,
-                            subject='Subject Text 2', body='Body Text 2')
+                            subject='Subjects Text 2', body='Body Text 2')
         self.msg1.sender_deleted_at = timezone.now()
         self.msg2.recipient_deleted_at = timezone.now()
         self.msg1.save()
@@ -53,12 +53,12 @@ class DeleteTestCase(TestCase):
         self.assertEqual(Message.objects.outbox_for(self.user1).count(), 1)
         self.assertEqual(
             Message.objects.outbox_for(self.user1)[0].subject,
-            'Subject Text 2'
+            'Subjects Text 2'
         )
         self.assertEqual(Message.objects.inbox_for(self.user2).count(), 1)
         self.assertEqual(
             Message.objects.inbox_for(self.user2)[0].subject,
-            'Subject Text 1'
+            'Subjects Text 1'
         )
         #undelete
         self.msg1.sender_deleted_at = None
@@ -78,7 +78,7 @@ class IntegrationTestCase(TestCase):
                     'email': 'user_1@example.com'},
                    {'username': 'user_2', 'password': '123456',
                     'email': 'user_2@example.com'}]
-    T_MESSAGE_DATA = [{'subject': 'Test Subject 1',
+    T_MESSAGE_DATA = [{'subject': 'Test Subjects 1',
                        'body': 'Lorem ipsum\ndolor sit amet\n\nconsectur.'}]
 
     def setUp(self):
@@ -194,7 +194,7 @@ class InboxCountTestCase(TestCase):
         )
         Message.objects.create(
             recipient=self.user_2,
-            subject="Subject",
+            subject="Subjects",
             body="Body",
             sender=self.user
         )

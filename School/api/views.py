@@ -1,6 +1,9 @@
+from django.http import HttpResponse
 from django.shortcuts import render
 
 from django.contrib.auth.models import User, Group
+
+
 from news.models import news_Paragraph
 from apply.models import applyApplication
 from projectsTestsQuestions.models import Project_news, Project
@@ -89,11 +92,26 @@ class CurrentProjectNewsList(generics.ListAPIView):
 class ProjectList(generics.ListAPIView):
     queryset = Project.objects.all()
     serializer_class = ProjectSerializer
+    permission_classes = (permissions.IsAuthenticated, DjangoObjectPermissionsOrAnonReadOnly,)
 
 class ProjectDetail(generics.RetrieveAPIView):
     queryset = Project.objects.all()
     serializer_class = ProjectSerializer
+    permission_classes = (permissions.IsAuthenticated, DjangoObjectPermissionsOrAnonReadOnly,)
 
+class ProjectMembers(generics.ListAPIView):
+    serializer_class = UserProfileSerializer
+    permission_classes = (permissions.IsAuthenticated, DjangoObjectPermissionsOrAnonReadOnly,)
+
+    def get_queryset(self):
+        apAplications = []
+        proj = Project.objects.get(id=self.kwargs['pk'])
+        for apAp in applyApplication.objects.all():
+            for member in proj.members.all():
+                if(apAp.id == member.id):
+                    apAplications.append(apAp.id)
+        queryset = applyApplication.objects.filter(id__in=apAplications)
+        return queryset
 
 class MessageList(generics.ListCreateAPIView):
     serializer_class = MessageSerializer
@@ -115,4 +133,3 @@ class MessageDetail(generics.RetrieveDestroyAPIView):
     # def get_queryset(self):
     #     queryset = Message.objects.filter(Q(recipient=self.request.user) | Q(sender=self.request.user))
     #     return queryset
-

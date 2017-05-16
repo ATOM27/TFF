@@ -21,7 +21,7 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 import settings
 from projectsTestsQuestions.views import *
 from machina.app import board
-
+from chat.views import chatRoom
 
 
 urlpatterns = [
@@ -31,6 +31,7 @@ urlpatterns = [
     url(r'^sign_in/', include('login.urls')),
     url(r'^sign_out/', include('login.urls')),
     url(r'^news/', include('news.urls')),
+    url(r'^aboutus/', include('aboutus.urls')),
     url(r'^apply/', include('apply.urls')),
     url(r'^tests/', include('projectsTestsQuestions.urls')),
     url(r'^profile/', include('perconalPage.urls')),
@@ -39,9 +40,10 @@ urlpatterns = [
     url(r'^newsproject/$', newsForCurrentProject),
     url(r'^newsproject/(\d+)/(\d+)/$', currentNewsForCurrentProject),
     url(r'^messages/', include('django_messages.urls')),
+    url(r'^chat/(\d+)', chatRoom),
     url(r'^ckeditor/', include('ckeditor_uploader.urls')),
     url(r'^forum/', include(board.urls)),
-    url(r'^api/', include('api.urls')),
+    url(r'^api/', include('api.urls'),),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

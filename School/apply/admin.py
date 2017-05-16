@@ -367,12 +367,15 @@ def distribution_of_participants_best(modeladmin, request, queryset):
 distribution_of_participants.short_description = "Make distribution"
 distribution_of_participants_best.short_description = "Make best distribution"
 
+from machina.apps.forum_member.models import ForumProfile
+
 def registerUsers(member, project):
     passForNewUser= str(member.id) + member.name
     if authenticate(username=member.name, password=passForNewUser) is None:
         newUser = User.objects.create_user(id=member.id, username=member.name, email=member.email,
                                                            password=passForNewUser)
         newUser.save()
+        ForumProfile(user=newUser).save()
         project.members.add(newUser)
 
 def send_email(modeladmin, request, queryset):

@@ -7,17 +7,19 @@ from django.http import HttpResponse
 from news.models import news_Paragraph
 from functions import get_all_projects
 from apply.models import applyApplication
+from django.contrib.auth.models import User
 from api.serializers import UserSerializer, UserProfileSerializer
 
 
 def main(request):
     args = {}
-    #args['count_projects'] = Project.objects.all().count()
+    # args['count_projects'] = Project.objects.all().count()
     args['projects'] = get_all_projects()
     news = news_Paragraph.objects.order_by('id')[0:4]
     args["news"] = news
     args['body_class'] = 'index'
     args['header_class'] = 'alt'
+
     return render(request ,'index.html', args)
 
 

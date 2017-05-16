@@ -78,60 +78,63 @@
 
 						<section class="wrapper style1 container special">
 							<div class="row">
-								<div class="4u 12u(narrower)">
+                                {% for proj in projects %}
+                                        <div class="4u 12u(narrower)">
 
 									<section class="recommend">
 
 										<header>
-											<h4>	Smart Career Planning and Skill Development via Personal Analytics</h4>
+											<h4>{{ proj.project_name }}</h4>
 										</header>
-										<img src="images/P2.jpg" width="100%">
-										<p>Oleksandr Romanko</p>
-										
+										<img src="{{ proj.image.url }}" width="100%">
+										<p>{{ proj.mentor_id.username }}</p>
+
 										<footer>
 											<ul class="buttons">
-												<li><a href="#" class="button small">Learn More</a></li>
+												<li><a href="/project/{{ proj.id }}" class="button small">Learn More</a></li>
 											</ul>
 										</footer>
 									</section>
 
 								</div>
-								<div class="4u 12u(narrower)">
+                                    {% endfor %}
 
-									<section class="recommend">
-
-										<header>
-											<h4>	Plasticity of Neural Circuits and Neurobiology of Learning</h4>
-										</header>
-										<img src="images/P3.jpg" width="100%">
-										<p>Jenia Jhitsev </p>
-										
-										<footer>
-											<ul class="buttons">
-												<li><a href="#" class="button small">Learn More</a></li>
-											</ul>
-										</footer>
-									</section>
-
-								</div>
-								<div class="4u 12u(narrower)">
-
-									<section class="recommend">
-
-										<header>
-											<h4>	Creating a virtual reality object </h4>
-										</header>
-										<img src="images/P4.jpg" width="100%">
-										<p>Dmytro Biriukov</p>
-										
-										<footer>
-											<ul class="buttons">
-												<li><a href="#" class="button small">Learn More</a></li>
-											</ul>
-										</footer>
-									</section>
-
-								</div>
+{#								<div class="4u 12u(narrower)">#}
+{##}
+{#									<section class="recommend">#}
+{##}
+{#										<header>#}
+{#											<h4>	Plasticity of Neural Circuits and Neurobiology of Learning</h4>#}
+{#										</header>#}
+{#										<img src="images/P3.jpg" width="100%">#}
+{#										<p>Jenia Jhitsev </p>#}
+{#										#}
+{#										<footer>#}
+{#											<ul class="buttons">#}
+{#												<li><a href="#" class="button small">Learn More</a></li>#}
+{#											</ul>#}
+{#										</footer>#}
+{#									</section>#}
+{##}
+{#								</div>#}
+{#								<div class="4u 12u(narrower)">#}
+{##}
+{#									<section class="recommend">#}
+{##}
+{#										<header>#}
+{#											<h4>	Creating a virtual reality object </h4>#}
+{#										</header>#}
+{#										<img src="images/P4.jpg" width="100%">#}
+{#										<p>Dmytro Biriukov</p>#}
+{#										#}
+{#										<footer>#}
+{#											<ul class="buttons">#}
+{#												<li><a href="#" class="button small">Learn More</a></li>#}
+{#											</ul>#}
+{#										</footer>#}
+{#									</section>#}
+{##}
+{#								</div>#}
 
 								
 							</div>

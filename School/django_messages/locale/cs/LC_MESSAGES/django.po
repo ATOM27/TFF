@@ -54,7 +54,7 @@ msgstr "Příjemce"
 #: templates/django_messages/outbox.html:10
 #: templates/django_messages/trash.html:10
 #: templates/django_messages/view.html:8
-msgid "Subject"
+msgid "Subjects"
 msgstr "Předmět"
 
 #: forms.py:20 models.py:53

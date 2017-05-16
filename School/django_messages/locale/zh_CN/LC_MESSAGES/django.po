@@ -30,7 +30,7 @@ msgstr "收信人"
 #: forms.py:24 models.py:50 templates\messages\inbox.html.py:7
 #: templates\messages\outbox.html.py:7 templates\messages\trash.html.py:7
 #: templates\messages\view.html.py:6
-msgid "Subject"
+msgid "Subjects"
 msgstr "主题"
 
 #: forms.py:25 models.py:51

@@ -16,8 +16,9 @@ urlpatterns = [
     url(r'^news/(?P<pk>[0-9]+)/$', views.NewsList.as_view()),
     url(r'^profile/(?P<pk>[0-9]+)/$', views.UserProfileDetail.as_view()),
     url(r'^project/(?P<pk>[0-9]+)/projectnews/$', views.CurrentProjectNewsList.as_view(), name="project-news"),
-    url(r'^project/$', views.ProjectList.as_view()),
+    url(r'^projects/$', views.ProjectList.as_view()),
     url(r'^project/(?P<pk>[0-9]+)$', views.ProjectDetail.as_view()),
+    url(r'^project/(?P<pk>[0-9]+)/members/$', views.ProjectMembers.as_view()),
     url(r'^message/$', views.MessageList.as_view())
 ] + format_suffix_patterns([
     url(r'^projectnews/(?P<pk>[0-9]+)/$',

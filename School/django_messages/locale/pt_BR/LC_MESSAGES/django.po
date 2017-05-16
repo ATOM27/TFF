@@ -48,7 +48,7 @@ msgstr "Os seguintes nome de usuário estão incorretos: %(users)s"
 #: forms.py:21 models.py:49 templates/messages/inbox.html:8
 #: templates/messages/outbox.html:8 templates/messages/trash.html:8
 #: templates/messages/view.html:6
-msgid "Subject"
+msgid "Subjects"
 msgstr "Assunto"
 
 #: forms.py:22 models.py:50

@@ -62,7 +62,7 @@ def prepareQuestions(countedSubjects, subjects):
 
 def projectShow(request, project_id):
     args = {}
-    args['projects'] = get_all_projects
+    args['projects'] = Project.objects.all().order_by('?')[0:3]
     project = Project.objects.get(id=project_id)
     args['body_class'] = 'contact'
     args['project'] = project

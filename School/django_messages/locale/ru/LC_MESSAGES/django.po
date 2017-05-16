@@ -49,7 +49,7 @@ msgstr "Некорректные имена пользователей: %(users)
 #: forms.py:21 models.py:49 templates/messages/inbox.html:7
 #: templates/messages/outbox.html:7 templates/messages/trash.html:7
 #: templates/messages/view.html:6
-msgid "Subject"
+msgid "Subjects"
 msgstr "Тема"
 
 #: forms.py:22 models.py:50

@@ -18,6 +18,7 @@
 								<div class="content">
 								{% for member in members %}
 									<div class="row">
+
 								<div class="12u box">
                                     {% if member.image %}
 									    <img src="{{ member.image.url }}" width="10%" height="auto">
@@ -26,7 +27,7 @@
 									{% endif %}
 									    <a href="/profile/{{member.id}}">{{member.name}}</a>
                                     </div>
-                                    </div>
+									<div>
 									{% endfor %}
 
 									<!--<h3>-->

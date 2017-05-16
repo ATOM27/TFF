@@ -54,7 +54,7 @@ msgstr "این کاربرها صحیح نمی‌باشند: %(users)s"
 #: templates/django_messages/outbox.html:8
 #: templates/django_messages/trash.html:8
 #: templates/django_messages/view.html:6
-msgid "Subject"
+msgid "Subjects"
 msgstr "موضوع"
 
 #: forms.py:22 models.py:50

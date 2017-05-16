@@ -5,6 +5,13 @@ from django.db import models
 from django.contrib.auth.models import User
 
 # Create your models here.
+
+class Subject(models.Model):
+    subject_name = models.CharField(max_length=30)
+
+    def __str__(self):
+        return self.subject_name
+
 class Project(models.Model):
     project_name = models.CharField(max_length=300)
     image = models.ImageField(blank=True, upload_to="projectImages/",)
@@ -27,11 +34,7 @@ class Project(models.Model):
             return self.project_name
 
 
-class Subject(models.Model):
-    subject_name = models.CharField(max_length=30)
 
-    def __str__(self):
-        return self.subject_name
 
 class MarkForEachProject(models.Model):
     project_id = models.ForeignKey(Project)
@@ -42,7 +45,7 @@ class MarkForEachProject(models.Model):
 class Test(models.Model):
     subject = models.ForeignKey(Subject)
     question = models.CharField(max_length=200)
-    #answer = models.ForeignKey(Answers)
+    # answer = models.ForeignKey(Answers)
     right_answer = models.CharField(max_length=50)
     wrong_answer1 = models.CharField(max_length=50)
     wrong_answer2 = models.CharField(max_length=50)

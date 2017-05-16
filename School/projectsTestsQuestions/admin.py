@@ -4,7 +4,7 @@ from models import *
 
 class MarksInLine(admin.TabularInline):
     model = MarkForEachProject
-    extra = Subject.objects.all().count()
+    # extra = Subject.objects.all().count()
 
 class ProjectsAdmin(admin.ModelAdmin):
     list_display = ['project_name']

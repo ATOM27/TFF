@@ -6,9 +6,13 @@ from projectsTestsQuestions.models import Project_news, Project
 from django_messages.models import Message
 from django.conf import settings
 
+class GroupSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Group
+        fields = ('id', 'name')
 
-class UserSerializer(serializers.HyperlinkedModelSerializer):
-    groups = serializers.HyperlinkedRelatedField(many=True, view_name="group-detail", queryset=Group.objects.all(), required=False)
+class UserSerializer(serializers.ModelSerializer):
+    groups = GroupSerializer(read_only=True)
 
     class Meta:
         model = User
@@ -27,17 +31,14 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
         instance.save()
         return instance
 
-class GroupSerializer(serializers.HyperlinkedModelSerializer):
-    class Meta:
-        model = Group
-        fields = ('id', 'name')
 
-class NewsParagraphSerializer(serializers.HyperlinkedModelSerializer):
+
+class NewsParagraphSerializer(serializers.ModelSerializer):
     class Meta:
         model = news_Paragraph
         fields = ('id', 'title', 'image', 'text', 'date')
 
-class UserProfileSerializer(serializers.HyperlinkedModelSerializer):
+class UserProfileSerializer(serializers.ModelSerializer):
     class Meta:
         model = applyApplication
         fields = ('id', 'name', 'surname', 'image', 'gender', 'dateOfBirth', 'country', 'city', 'email', 'placeOfWorkOrStudy', 'speciality', 'motivationMessage')
@@ -60,24 +61,26 @@ class UserProfileSerializer(serializers.HyperlinkedModelSerializer):
         instance.save()
         return instance
 
-class ProjectNewsSerializer(serializers.HyperlinkedModelSerializer):
-    project_id = serializers.ReadOnlyField(source='project_id.name')
+class ProjectSerializer(serializers.ModelSerializer):
+    #projectnews = serializers.HyperlinkedRelatedField(many=True, view_name="projectnews-detail", queryset=Project_news.objects.all())
+    mentor_id = UserSerializer(read_only=True)
+    members = UserSerializer(read_only=True ,many=True)
+    class Meta:
+        model = Project
+        fields = ('id', 'project_name', 'image', 'description', 'mentor_id',  'mentor_image', 'mentor_description', "members")#'projectnews'
+
+class ProjectNewsSerializer(serializers.ModelSerializer):
+    project_id = ProjectSerializer(read_only=True)
     class Meta:
         model = Project_news
         fields = ('id', 'project_id', 'title', 'image', 'text')
 
-class ProjectSerializer(serializers.HyperlinkedModelSerializer):
-    #projectnews = serializers.HyperlinkedRelatedField(many=True, view_name="projectnews-detail", queryset=Project_news.objects.all())
-    class Meta:
-        model = Project
-        fields = ('id', 'project_name', 'image', 'description', 'mentor_id',  'mentor_image', 'mentor_description')#'projectnews'
 
 
-class MessageSerializer(serializers.HyperlinkedModelSerializer):
-    sender = serializers.PrimaryKeyRelatedField(queryset=User.objects.all())
-    recipient = serializers.PrimaryKeyRelatedField(queryset=User.objects.all())
-    parent_msg = serializers.HyperlinkedRelatedField(view_name = 'parent_msg-detail', queryset=Message.objects.all(), required=False, allow_null=True)
-
+class MessageSerializer(serializers.ModelSerializer):
+    sender = UserProfileSerializer(read_only=True)
+    recipient = UserProfileSerializer(read_only=True)
+    parent_msg = serializers.PrimaryKeyRelatedField(read_only=True)
     class Meta:
         model = Message
         fields = ('id', 'subject', 'body', 'sender', 'recipient', 'parent_msg', 'sent_at', 'read_at', 'replied_at', 'sender_deleted_at', 'recipient_deleted_at')

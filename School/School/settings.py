@@ -14,7 +14,7 @@ import os
 from machina import get_apps as get_machina_apps
 from machina import MACHINA_MAIN_TEMPLATE_DIR
 from machina import MACHINA_MAIN_STATIC_DIR
-
+import datetime
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -47,8 +47,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sites',
+    'aboutus',
     'login',
-    'news',
+     'news',
     'projectsTestsQuestions',
     'apply',
     'perconalPage',
@@ -66,7 +67,25 @@ INSTALLED_APPS = [
     #REST
     'rest_framework',
     'api',
+    #chatt
+    'channels',
+    'chat',
 ]+ get_machina_apps()
+
+redis_host = os.environ.get('REDIS_HOST', 'localhost')
+
+# Channel layer definitions
+# http://channels.readthedocs.org/en/latest/deploying.html#setting-up-a-channel-backend
+CHANNEL_LAYERS = {
+    "default": {
+        # This example app uses the Redis channel layer implementation asgi_redis
+        "BACKEND": "asgi_redis.RedisChannelLayer",
+        "CONFIG": {
+            "hosts": [(redis_host, 6379)],
+        },
+        "ROUTING": "School.routing.channel_routing",
+    },
+}
 
 
 CKEDITOR_RESTRICT_BY_USER = True
@@ -122,8 +141,10 @@ TEMPLATES = [
                   os.path.join(BASE_DIR, '../django_messages/templates/django_messages'),
                   os.path.join(BASE_DIR, '../django_messages/templates/notification'),
                   os.path.join(BASE_DIR, '../django_messages/templates/'),
-                  os.path.join(BASE_DIR, '../templates/machina/')],
-        'APP_DIRS': True,
+                  os.path.join(BASE_DIR, '../templates/machina/'),
+                  os.path.join(BASE_DIR, '../chat/templates/'),
+                  os.path.join(BASE_DIR, '../aboutus/templates/'),],
+            'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
@@ -193,6 +214,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/dev/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = '/static/'
 
 STATICFILES_DIRS = (
     'static', os.path.join(BASE_DIR, 'static'),
@@ -218,8 +240,56 @@ CACHES = {
   }
 }
 
+MACHINA_DEFAULT_AUTHENTICATED_USER_FORUM_PERMISSIONS = [
+    'can_see_forum',
+    'can_read_forum',
+    'can_start_new_topics',
+    'can_reply_to_topics',
+    'can_edit_own_posts',
+    'can_post_without_approval',
+    'can_create_polls',
+    'can_vote_in_polls',
+    'can_download_file',
+]
+
 HAYSTACK_CONNECTIONS = {
   'default': {
     'ENGINE': 'haystack.backends.simple_backend.SimpleEngine',
   },
+}
+
+JWT_AUTH = {
+    'JWT_ENCODE_HANDLER':
+    'rest_framework_jwt.utils.jwt_encode_handler',
+
+    'JWT_DECODE_HANDLER':
+    'rest_framework_jwt.utils.jwt_decode_handler',
+
+    'JWT_PAYLOAD_HANDLER':
+    'rest_framework_jwt.utils.jwt_payload_handler',
+
+    'JWT_PAYLOAD_GET_USER_ID_HANDLER':
+    'rest_framework_jwt.utils.jwt_get_user_id_from_payload_handler',
+
+    'JWT_RESPONSE_PAYLOAD_HANDLER':
+    'School.views.jwt_response_payload_handler',
+
+    'JWT_SECRET_KEY': SECRET_KEY,
+    'JWT_GET_USER_SECRET_KEY': None,
+    'JWT_PUBLIC_KEY': None,
+    'JWT_PRIVATE_KEY': None,
+    'JWT_ALGORITHM': 'HS256',
+    'JWT_VERIFY': True,
+    'JWT_VERIFY_EXPIRATION': True,
+    'JWT_LEEWAY': 0,
+    'JWT_EXPIRATION_DELTA': datetime.timedelta(days=7),
+    'JWT_AUDIENCE': None,
+    'JWT_ISSUER': None,
+
+    'JWT_ALLOW_REFRESH': False,
+    'JWT_REFRESH_EXPIRATION_DELTA': datetime.timedelta(days=7),
+
+    'JWT_AUTH_HEADER_PREFIX': 'JWT',
+    'JWT_AUTH_COOKIE': None,
+
 }
