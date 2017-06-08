@@ -17,6 +17,14 @@ class applyApplication(models.Model):
     placeOfWorkOrStudy = models.CharField(max_length=100)
     speciality = models.CharField(max_length=50)
     motivationMessage = models.TextField()
+    faceBookLink = models.CharField(max_length=250, blank=True, null=True)
+    skypeLink = models.CharField(max_length=250, blank=True, null=True)
+    telegrammLink = models.CharField(max_length=250, blank=True, null=True)
+    googlePlusLink = models.CharField(max_length=250, blank=True, null=True)
+    instagrammLink = models.CharField(max_length=250, blank=True, null=True)
+    twitterLink = models.CharField(max_length=250, blank=True, null=True)
+    behanceLink = models.CharField(max_length=250, blank=True, null=True)
+    linkedInLink = models.CharField(max_length=250, blank=True, null=True)
 
     def __str__(self):
         return '%s %s' % (self.name, self.surname)

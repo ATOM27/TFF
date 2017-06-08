@@ -64,3 +64,11 @@ class IsProjectMember(permissions.BasePermission):
                 return False
         except:
             return False
+
+class IsRoomMember(permissions.BasePermission):
+
+    def has_object_permission(self, request, view, obj):
+        for member in obj.members.all():
+            if member.id == request.user.id:
+                return True
+        return False

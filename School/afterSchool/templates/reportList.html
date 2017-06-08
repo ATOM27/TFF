@@ -1,0 +1,29 @@
+{% extends 'main.html' %}
+{% load staticfiles %}
+{% block content %}
+			<!-- Main -->
+				<article id="main">
+
+					<header class="special container">
+						<div class="8u -2u">
+						<h2><strong> {{ project.project_name }} </strong></h2>
+						</div>
+
+					</header>
+
+					<!-- One -->
+						<section class="wrapper style4 container 80%">
+
+							<!-- Content -->
+								<div class="content">
+                                    {% for report in reports %}
+								<img src="{{ report.image.url }}" width="80%">
+									<p>{{ report.get_short_text|safe }}</p>
+									<br><a href="/reports/{{ report.id }}/">See more...</a>
+                                        <hr>
+                                    {% endfor %}
+								</div>
+						</section>
+
+				</article>
+{% endblock %}

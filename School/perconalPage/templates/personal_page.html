@@ -20,7 +20,7 @@
 								<div class="row">
 								<div class="4u box">
 									{% if userApply.image %}
-									<img src="{{ userApply.image.url }}" width="100%" height="auto">
+									<img src="{{ userApply.image.url }}" width="100%" height="auto" style="border-radius: 50%;">
 									{% else %}
 									<img src="{% static 'assets/images/qa.png'%}" width="100%" height="auto">
 									{% endif %}
@@ -31,7 +31,7 @@
                                      {% if user.is_authenticated %}
                                          {% if not correctUser %}
                                             <span class="edit">
-										        <a href="/messages/compose/{{ userApply.name }}/" class="change"> Write message</a>
+										        <a href="/chat/room/{{ userApply.id }}/" class="change"> Write message</a>
 									        </span>
                                          {% endif %}
                                      {% else %}
@@ -41,19 +41,48 @@
 										<a href="/profile/edit/{{ userApply.id }}" class="change"> Edit profile</a>
 									</span>
 									{% endif %}
+                                <span>
+                                    {% if userApply.faceBookLink %}
+                                        <a href="{{ userApply.faceBookLink }}" сlass="margin-right: 20px;"><img src="{% static 'assets/images/facebook.png'%}" width="auto" height="auto"></a>
+                                    {% endif %}
+                                    {% if userApply.skypeLink %}
+                                        <a href="skype:{{ userApply.skypeLink }}?userinfo" сlass="margin-right: 20px;"><img src="{% static 'assets/images/skype.png'%}" width="auto" height="auto"></a>
+                                    {% endif %}
+                                    {% if userApply.telegrammLink %}
+                                        <a href="{{ userApply.telegrammLink }}" сlass="margin-right: 20px;"><img src="{% static 'assets/images/telegram.png'%}" width="auto" height="auto"></a>
+                                    {% endif %}
+                                    {% if userApply.googlePlusLink %}
+                                        <a href="{{ userApply.googlePlusLink }}" сlass="margin-right: 20px;"><img src="{% static 'assets/images/google-plus.png'%}" width="auto" height="auto"></a><br>
+                                    {% endif %}
+                                    {% if userApply.instagrammLink %}
+                                        <a href="{{ userApply.instagrammLink }}" сlass="margin-right: 20px;"><img src="{% static 'assets/images/instagram.png'%}" width="auto" height="auto"></a>
+                                    {% endif %}
+                                    {% if userApply.twitterLink %}
+                                        <a href="{{ userApply.twitterLink }}" сlass="margin-right: 20px;"><img src="{% static 'assets/images/twitter.png'%}" width="auto" height="auto"></a>
+                                    {% endif %}
+                                    {% if userApply.behanceLink %}
+                                        <a href="#" сlass="margin-right: 20px;"><img src="{% static 'assets/images/behance.png'%}" width="auto" height="auto"></a>
+                                    {% endif %}
+                                    {% if userApply.linkedInLink %}
+                                        <a href="{{ userApply.linkedInLink }}" сlass="margin-right: 20px;"><img src="{% static 'assets/images/linkedin.png'%}" width="auto" height="auto"></a>
+                                    {% endif %}
+                                </span>
 
 
 
 								</div>
-								<div class="7u profile">
+								<div class="7u profile" style="text-align: left;">
 									<h2> {{ userApply.name }}</h2>
 									<!--<p> participant </p>-->
 							
 									<ul>
-										<li> <strong> Activity: </strong> <i> {{ userApply.placeOfWorkOrStudy }}, {{ userApply.speciality }}  </i>  </li><br>
+										<li> <strong>  Plave of work(study): </strong> <i> {{ userApply.placeOfWorkOrStudy }}  </i>  </li><br>
+                                        <li> <strong>  Speciality:</strong><i>{{ userApply.speciality }}</i></li><br>
 										<li> <strong>  Age: </strong> <i> {{ userApply.dateOfBirth }} </i> </li> <br>
-										<li> <strong>  From: </strong> <i> {{ userApply.city }}, {{ userApply.country }}  </i> </li> <br>
-										<li> <strong>  Project: </strong> <i> 	Using Neural Networks for Diabetic Retinopathy Detection in Eye Images  </i></li><br> 
+										<li> <strong>  Country: </strong> <i> {{ userApply.country }}  </i> </li> <br>
+                                        <li> <strong>  City: </strong> <i>  {{ userApply.city }}  </i> </li> <br>
+                                        <li> <strong>  Email: </strong> <i>  {{ userApply.email }}  </i> </li> <br>
+										<li> <strong>  Project: </strong> <i> 	<a href="/project/{{ proj.id }}">{{ proj.project_name }}  </i></li><br>
 									</ul>
 								</div>
 

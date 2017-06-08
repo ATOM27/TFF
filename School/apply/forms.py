@@ -1,5 +1,7 @@
 from django import forms
 from django.core.validators import RegexValidator
+from django.core.validators import URLValidator
+from django.core.exceptions import ValidationError
 
 GENDER_CHOICES = (('m', 'Male',), ('f', 'Female',))
 English_alph_validator = RegexValidator(regex='^[A-Za-z]+', message='This field should be in english', code='invalid_username')
@@ -30,6 +32,15 @@ class applyForm(forms.Form):
     placeOfWorkOrStudy = forms.CharField(label='Place of work/study', widget=forms.TextInput(attrs={'placeholder': 'KPI'}), validators=[English_alph_validator])
     speciality = forms.CharField(label='Speciality', widget=forms.TextInput(attrs={'placeholder': 'Computer science'}), validators=[English_alph_validator])
     motivationMessage = forms.CharField(widget=forms.Textarea(attrs={'placeholder': 'Becouse'}), label='Why do you want became a participant?', validators=[motivation_message_validator])
+    faceBookLink = forms.CharField(label='Facebook(optional)', widget=forms.TextInput(attrs={'placeholder': 'facebook link'}), required=False)
+    skypeLink = forms.CharField(label='Skype(optional)',widget=forms.TextInput(attrs={'placeholder': 'Skype nickname'}), required=False)
+    telegrammLink = forms.CharField(label='Telegramm(optional)', widget=forms.TextInput(attrs={'placeholder': 'Telegram link'}), required=False)
+    googlePlusLink = forms.CharField(label='Google plus(optional)',widget=forms.TextInput(attrs={'placeholder': 'Google plus link'}), required=False)
+    instagrammLink = forms.CharField(label='Instagramm(optional)', widget=forms.TextInput(attrs={'placeholder': 'Instagramm link'}), required=False)
+    twitterLink = forms.CharField(label='Twitter(optional)', widget=forms.TextInput(attrs={'placeholder': 'Twitter link'}), required=False)
+    behanceLink = forms.CharField(label='Behance(optional)', widget=forms.TextInput(attrs={'placeholder': 'Behance link'}), required=False)
+    linkedInLink = forms.CharField(label='LinkedIn(optional)', widget=forms.TextInput(attrs={'placeholder': 'LinkedIn link'}), required=False)
+
 
     def clean_name(self):
         simbols = '!@#$%^&*()[]{}:_~=+-?/.,\/;|\'\"'
@@ -78,5 +89,66 @@ class applyForm(forms.Form):
             if data.find(simbols[i]) != -1:
                 raise forms.ValidationError("Have invalid simbols")
         return data
+
+    def clean_faceBookLink(self):
+        data = self.cleaned_data['faceBookLink']
+        if data:
+            val = URLValidator()
+            try:
+                dat = val(data)
+            except ValidationError, e:
+                raise forms.ValidationError("That website does not exist. Please try again.")
+        return data
+
+    def clean_googlePlusLink(self):
+        data = self.cleaned_data['googlePlusLink']
+        if data:
+            val = URLValidator()
+            try:
+                dat = val(data)
+            except ValidationError, e:
+                raise forms.ValidationError("That website does not exist. Please try again.")
+        return data
+
+    def clean_instagrammLink(self):
+        data = self.cleaned_data['instagrammLink']
+        if data:
+            val = URLValidator()
+            try:
+                dat = val(data)
+            except ValidationError, e:
+                raise forms.ValidationError("That website does not exist. Please try again.")
+        return data
+
+    def clean_twitterLink(self):
+        data = self.cleaned_data['twitterLink']
+        if data:
+            val = URLValidator()
+            try:
+                dat = val(data)
+            except ValidationError, e:
+                raise forms.ValidationError("That website does not exist. Please try again.")
+        return data
+
+    def clean_behanceLink(self):
+        data = self.cleaned_data['behanceLink']
+        if data:
+            val = URLValidator()
+            try:
+                dat = val(data)
+            except ValidationError, e:
+                raise forms.ValidationError("That website does not exist. Please try again.")
+        return data
+
+    def clean_linkedInLink(self):
+        data = self.cleaned_data['linkedInLink']
+        if data:
+            val = URLValidator()
+            try:
+                dat = val(data)
+            except ValidationError, e:
+                raise forms.ValidationError("That website does not exist. Please try again.")
+        return data
+
 
 

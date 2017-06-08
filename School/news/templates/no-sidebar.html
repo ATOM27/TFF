@@ -7,9 +7,9 @@
 {% block banner %}
 				<article id="main">
 				<header class="special container">
-						<span class="icon fa-mobile"></span>
-						<h2>And finally there's <strong>No Sidebar</strong></h2>
-						<p>Where that in the center faces the nameless horrors alone.</p>
+{#						<span class="icon fa-mobile"></span>#}
+                    <h2><strong>{{ news.title }}</strong></h2>
+{#						<p>Where that in the center faces the nameless horrors alone.</p>#}
 					</header>
 {% endblock %}
 {% block content %}
@@ -33,51 +33,70 @@
 				<!-- Two -->
 				<section class="wrapper style1 container special">
 							<div class="row">
-								<div class="4u 12u(narrower)">
+
+                                {% for news in random_news %}
+                                    <div class="4u 12u(narrower)">
 
 									<section>
 										<header>
-											<h3>This is Something</h3>
+											<h3>{{ news.title }}</h3>
 										</header>
-										<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
+										<p>{{ news.get_short_text|safe }}</p>
 										<footer>
 											<ul class="buttons">
-												<li><a href="#" class="button small">Learn More</a></li>
+												<li><a href="{{ news.id }}" class="button small">Learn More</a></li>
 											</ul>
 										</footer>
 									</section>
 
 								</div>
-								<div class="4u 12u(narrower)">
-
-									<section>
-										<header>
-											<h3>Also Something</h3>
-										</header>
-										<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
-										<footer>
-											<ul class="buttons">
-												<li><a href="#" class="button small">Learn More</a></li>
-											</ul>
-										</footer>
-									</section>
-
-								</div>
-								<div class="4u 12u(narrower)">
-
-									<section>
-										<header>
-											<h3>Probably Something</h3>
-										</header>
-										<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
-										<footer>
-											<ul class="buttons">
-												<li><a href="#" class="button small">Learn More</a></li>
-											</ul>
-										</footer>
-									</section>
-
-								</div>
+                                {% endfor %}
+{#                            #}
+{#								<div class="4u 12u(narrower)">#}
+{##}
+{#									<section>#}
+{#										<header>#}
+{#											<h3>This is Something</h3>#}
+{#										</header>#}
+{#										<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>#}
+{#										<footer>#}
+{#											<ul class="buttons">#}
+{#												<li><a href="#" class="button small">Learn More</a></li>#}
+{#											</ul>#}
+{#										</footer>#}
+{#									</section>#}
+{##}
+{#								</div>#}
+{#								<div class="4u 12u(narrower)">#}
+{##}
+{#									<section>#}
+{#										<header>#}
+{#											<h3>Also Something</h3>#}
+{#										</header>#}
+{#										<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>#}
+{#										<footer>#}
+{#											<ul class="buttons">#}
+{#												<li><a href="#" class="button small">Learn More</a></li>#}
+{#											</ul>#}
+{#										</footer>#}
+{#									</section>#}
+{##}
+{#								</div>#}
+{#								<div class="4u 12u(narrower)">#}
+{##}
+{#									<section>#}
+{#										<header>#}
+{#											<h3>Probably Something</h3>#}
+{#										</header>#}
+{#										<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>#}
+{#										<footer>#}
+{#											<ul class="buttons">#}
+{#												<li><a href="#" class="button small">Learn More</a></li>#}
+{#											</ul>#}
+{#										</footer>#}
+{#									</section>#}
+{##}
+{#								</div>#}
 							</div>
 						</section>
 				</article>

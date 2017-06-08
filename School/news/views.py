@@ -11,6 +11,7 @@ def show_news(request, news_id):
     args = {}
     args['projects'] = get_all_projects()
     args["news"] = news_with_id
+    args["random_news"] = news_Paragraph.objects.order_by("?")[0:3]
     rand_number = random.randint(0,2)
     if rand_number == 0:
         template = 'left-sidebar.html'

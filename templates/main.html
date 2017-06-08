@@ -21,16 +21,28 @@
 -->
 			<!-- Header -->
 				<header id="header" class="{{ header_class }}">
-					<h1 id="logo"><a href="/index">Technology <span> for future</span></a></h1>
+					<h1 id="logo"><a href="/page/1/">Technology <span> for future</span></a></h1>
 					<nav id="nav">
 						<ul>
                             {% if user.is_authenticated %}
 							    <li class="current"><a href="/profile/{{ user.id }}">Profile</a></li>
                                 <li class="current"><a href="/newsproject/">Project news</a></li>
+                                {% if reports %}
+                                    <li class="current"><a href="/reports/">Reports</a></li>
+                                {% endif %}
+                                <li class="submenu">
+								    <a href="#">Messages</a>
+								    <ul>
+									    <li><a href="/chat/">Messages</a></li>
+                                        <li><a href="/chat/group/">Group chat</a></li>
+								    </ul>
+							    </li>
+                            {% else %}
+                                <li class="current"><a href="/apply">Apply</a></li>
                             {% endif %}
                             <li class="current"><a href="/index">Welcome</a></li>
 							<li class="current"><a href="/aboutus">About us</a></li>
-							<li class="current"><a href="/apply">Apply</a></li>
+
 							<li class="submenu">
 								<a href="#">Projects</a>
 								<ul>
@@ -64,92 +76,6 @@
 				</header>
 {% endblock%}
 {% block banner %}{% endblock %}
-	<!-- Main -->
-			<!-- 	<article id="main">
-
-					<header class="special container">
-						<span class="icon fa-bar-chart-o"></span>
-						<h2>As this is my <strong>twentieth</strong> freebie for HTML5 UP
-						<br />
-						I decided to give it a really creative name.</h2>
-						<p>Turns out <strong>Twenty</strong> was the best I could come up with. Anyway, lame name aside,
-						<br />
-						it's minimally designed, fully responsive, built on HTML5/CSS3/<strong>skel</strong>,
-						and, like all my stuff,
-						<br />
-						released for free under the <a href="http://html5up.net/license">Creative Commons Attribution 3.0</a> license. Have fun!</p>
-					</header> -->
-<!--
-					////////One
-						<section class="wrapper style2 container special-alt">
-							<div class="row 50%">
-								<div class="8u 12u(narrower)">
-
-									<header>
-										<h2>Behold the <strong>icons</strong> that visualize what you’re all about. or just take up space. your call bro.</h2>
-									</header>
-									<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu comteger ut fermentum lorem. Lorem ipsum dolor sit amet. Sed tristique purus vitae volutpat ultrices. eu elit eget commodo. Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo.</p>
-									<footer>
-										<ul class="buttons">
-											<li><a href="#" class="button">Find Out More</a></li>
-										</ul>
-									</footer>
-
-								</div>
-								<div class="4u 12u(narrower) important(narrower)">
-
-									<ul class="featured-icons">
-										<li><span class="icon fa-clock-o"><span class="label">Feature 1</span></span></li>
-										<li><span class="icon fa-volume-up"><span class="label">Feature 2</span></span></li>
-										<li><span class="icon fa-laptop"><span class="label">Feature 3</span></span></li>
-										<li><span class="icon fa-inbox"><span class="label">Feature 4</span></span></li>
-										<li><span class="icon fa-lock"><span class="label">Feature 5</span></span></li>
-										<li><span class="icon fa-cog"><span class="label">Feature 6</span></span></li>
-									</ul>
-
-								</div>
-							</div>
-						</section>
-
-					//////////Two
-						<section class="wrapper style1 container special">
-							<div class="row">
-								<div class="4u 12u(narrower)">
-
-									<section>
-										<span class="icon featured fa-check"></span>
-										<header>
-											<h3>This is Something</h3>
-										</header>
-										<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
-									</section>
-
-								</div>
-								<div class="4u 12u(narrower)">
-
-									<section>
-										<span class="icon featured fa-check"></span>
-										<header>
-											<h3>Also Something</h3>
-										</header>
-										<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
-									</section>
-
-								</div>
-								<div class="4u 12u(narrower)">
-
-									<section>
-										<span class="icon featured fa-check"></span>
-										<header>
-											<h3>Probably Something</h3>
-										</header>
-										<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
-									</section>
-
-								</div>
-							</div>
-						</section> -->
-
 {% block content%}{% endblock %}
 
 

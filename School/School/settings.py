@@ -11,9 +11,9 @@ https://docs.djangoproject.com/en/dev/ref/settings/
 """
 
 import os
-from machina import get_apps as get_machina_apps
-from machina import MACHINA_MAIN_TEMPLATE_DIR
-from machina import MACHINA_MAIN_STATIC_DIR
+# from machina import get_apps as get_machina_apps
+# from machina import MACHINA_MAIN_TEMPLATE_DIR
+# from machina import MACHINA_MAIN_STATIC_DIR
 import datetime
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -54,23 +54,24 @@ INSTALLED_APPS = [
     'apply',
     'perconalPage',
     #messages throug users
-    'django_messages',
+    # 'django_messages',
     #rich text field
     'ckeditor',
     'ckeditor_uploader',
+    'afterSchool',
 
     # Machina related apps:
-    'mptt',
-    'haystack',
-    'widget_tweaks',
+    # 'mptt',
+    # 'haystack',
+    # 'widget_tweaks',
 
     #REST
     'rest_framework',
     'api',
     #chatt
     'channels',
-    'chat',
-]+ get_machina_apps()
+    'chat',]
+# ]+ get_machina_apps()
 
 redis_host = os.environ.get('REDIS_HOST', 'localhost')
 
@@ -124,7 +125,7 @@ MIDDLEWARE_CLASSES = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 
 # Machina
-    'machina.apps.forum_permission.middleware.ForumPermissionMiddleware',
+#     'machina.apps.forum_permission.middleware.ForumPermissionMiddleware',
 ]
 
 ROOT_URLCONF = 'School.urls'
@@ -138,10 +139,10 @@ TEMPLATES = [
                   os.path.join(BASE_DIR, '../apply/templates'),
                   os.path.join(BASE_DIR, '../projectsTestsQuestions/templates'),
                   os.path.join(BASE_DIR, '../perconalPage/templates'),
-                  os.path.join(BASE_DIR, '../django_messages/templates/django_messages'),
-                  os.path.join(BASE_DIR, '../django_messages/templates/notification'),
-                  os.path.join(BASE_DIR, '../django_messages/templates/'),
-                  os.path.join(BASE_DIR, '../templates/machina/'),
+                  # os.path.join(BASE_DIR, '../django_messages/templates/django_messages'),
+                  # os.path.join(BASE_DIR, '../django_messages/templates/notification'),
+                  # os.path.join(BASE_DIR, '../django_messages/templates/'),
+                  # os.path.join(BASE_DIR, '../templates/machina/'),
                   os.path.join(BASE_DIR, '../chat/templates/'),
                   os.path.join(BASE_DIR, '../aboutus/templates/'),],
             'APP_DIRS': True,
@@ -151,9 +152,9 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-
+                'afterSchool.context_processors.categories_processor',
                 # Machina
-                'machina.core.context_processors.metadata',
+                # 'machina.core.context_processors.metadata',
             ],
         },
     },
@@ -218,7 +219,7 @@ STATIC_ROOT = '/static/'
 
 STATICFILES_DIRS = (
     'static', os.path.join(BASE_DIR, 'static'),
-    MACHINA_MAIN_STATIC_DIR,
+    # MACHINA_MAIN_STATIC_DIR,
     #'/Users/eugenemekhedov/Documents/TFF/School/static',
 )
 #STATIC_ROOT = os.path.join(BASE_DIR, 'static')
@@ -289,7 +290,28 @@ JWT_AUTH = {
     'JWT_ALLOW_REFRESH': False,
     'JWT_REFRESH_EXPIRATION_DELTA': datetime.timedelta(days=7),
 
-    'JWT_AUTH_HEADER_PREFIX': 'JWT',
-    'JWT_AUTH_COOKIE': None,
+    'JWT_AUTH_HEADER_PREFIX': 'Token',
+    'JWT_AUTH_COOKIE': "YES",
 
+}
+
+import logging
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'file': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'filename': os.path.join(BASE_DIR, 'APPNAME.log'),
+        },
+    },
+    'loggers': {
+        'django.request': {
+            'handlers': ['file'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+    },
 }

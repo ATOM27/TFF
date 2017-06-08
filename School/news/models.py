@@ -7,7 +7,7 @@ from django.db import models
 
 class news_Paragraph(models.Model):
     title = models.CharField(max_length=30)
-    image = models.ImageField(blank=True, upload_to="images/",)
+    image = models.ImageField(upload_to="images/",)
     text = RichTextUploadingField()
     date = models.DateTimeField()
 

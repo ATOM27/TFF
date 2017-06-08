@@ -1,0 +1,460 @@
+Internal Server Error: /profile/1
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/channels/handler.py", line 240, in process_exception_by_middleware
+    return super(AsgiHandler, self).process_exception_by_middleware(exception, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/eugenemekhedov/Documents/TFF/School/perconalPage/views.py", line 17, in perconal_page
+    user = applyApplication.objects.get(id=user_id)
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+DoesNotExist: applyApplication matching query does not exist.
+Not Found: /dogs/
+Not Found: /favicon.ico
+Internal Server Error: /project/18/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/channels/handler.py", line 240, in process_exception_by_middleware
+    return super(AsgiHandler, self).process_exception_by_middleware(exception, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/eugenemekhedov/Documents/TFF/School/projectsTestsQuestions/views.py", line 70, in projectShow
+    return render(request ,'project.html', args)
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 208, in render
+    return self._render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/loader_tags.py", line 174, in render
+    return compiled_parent._render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/loader_tags.py", line 70, in render
+    result = block.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 1044, in render
+    output = self.filter_expression.resolve(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 711, in resolve
+    obj = self.var.resolve(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 852, in resolve
+    value = self._resolve_lookup(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+  File "/Library/Python/2.7/site-packages/django/db/models/fields/files.py", line 68, in _get_url
+    self._require_file()
+  File "/Library/Python/2.7/site-packages/django/db/models/fields/files.py", line 46, in _require_file
+    raise ValueError("The '%s' attribute has no file associated with it." % self.field.name)
+ValueError: The 'image' attribute has no file associated with it.
+Internal Server Error: /newsproject/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/channels/handler.py", line 240, in process_exception_by_middleware
+    return super(AsgiHandler, self).process_exception_by_middleware(exception, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/eugenemekhedov/Documents/TFF/School/projectsTestsQuestions/views.py", line 83, in newsForCurrentProject
+    newsInProject = Project_news.objects.filter(project_id=project.id)
+AttributeError: 'NoneType' object has no attribute 'id'
+Internal Server Error: /newsproject/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/channels/handler.py", line 240, in process_exception_by_middleware
+    return super(AsgiHandler, self).process_exception_by_middleware(exception, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/eugenemekhedov/Documents/TFF/School/projectsTestsQuestions/views.py", line 83, in newsForCurrentProject
+    newsInProject = Project_news.objects.filter(project_id=project.id)
+AttributeError: 'NoneType' object has no attribute 'id'
+Internal Server Error: /aboutus/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/channels/handler.py", line 240, in process_exception_by_middleware
+    return super(AsgiHandler, self).process_exception_by_middleware(exception, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/eugenemekhedov/Documents/TFF/School/aboutus/views.py", line 14, in aboutUs
+    return render(request ,'aboutus.html', args)
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 208, in render
+    return self._render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/loader_tags.py", line 174, in render
+    return compiled_parent._render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/loader_tags.py", line 70, in render
+    result = block.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 1044, in render
+    output = self.filter_expression.resolve(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 711, in resolve
+    obj = self.var.resolve(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 852, in resolve
+    value = self._resolve_lookup(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+  File "/Library/Python/2.7/site-packages/django/db/models/fields/files.py", line 68, in _get_url
+    self._require_file()
+  File "/Library/Python/2.7/site-packages/django/db/models/fields/files.py", line 46, in _require_file
+    raise ValueError("The '%s' attribute has no file associated with it." % self.field.name)
+ValueError: The 'image' attribute has no file associated with it.
+Internal Server Error: /page/0/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/channels/handler.py", line 240, in process_exception_by_middleware
+    return super(AsgiHandler, self).process_exception_by_middleware(exception, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/eugenemekhedov/Documents/TFF/School/School/views.py", line 38, in mainTwo
+    news = news_Paragraph.objects.order_by('id')[(int(page)-1)*4:int(page)*4]
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 275, in __getitem__
+    "Negative indexing is not supported."
+AssertionError: Negative indexing is not supported.
+Not Found: /accounts/login/
+Internal Server Error: /admin/apply/applyapplication/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/channels/handler.py", line 240, in process_exception_by_middleware
+    return super(AsgiHandler, self).process_exception_by_middleware(exception, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 544, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
+    return view(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1569, in changelist_view
+    response = self.response_action(request, queryset=cl.get_queryset(request))
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1305, in response_action
+    response = func(self, request, queryset)
+  File "/Users/eugenemekhedov/Documents/TFF/School/apply/admin.py", line 403, in distribution_of_participants_best
+    registerUsers(member, project)
+  File "/Users/eugenemekhedov/Documents/TFF/School/apply/admin.py", line 436, in registerUsers
+    password=passForNewUser)
+  File "/Library/Python/2.7/site-packages/django/contrib/auth/models.py", line 157, in create_user
+    return self._create_user(username, email, password, **extra_fields)
+  File "/Library/Python/2.7/site-packages/django/contrib/auth/models.py", line 151, in _create_user
+    user.save(using=self._db)
+  File "/Library/Python/2.7/site-packages/django/contrib/auth/base_user.py", line 80, in save
+    super(AbstractBaseUser, self).save(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 796, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 824, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 908, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 947, in _do_insert
+    using=using, raw=raw)
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1043, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 1054, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 112, in execute
+    return self.cursor.execute(query, args)
+  File "/Library/Python/2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+IntegrityError: (1062, "Duplicate entry 'Artem' for key 'username'")
+Internal Server Error: /admin/apply/applyapplication/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/channels/handler.py", line 240, in process_exception_by_middleware
+    return super(AsgiHandler, self).process_exception_by_middleware(exception, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 544, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
+    return view(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1569, in changelist_view
+    response = self.response_action(request, queryset=cl.get_queryset(request))
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1305, in response_action
+    response = func(self, request, queryset)
+  File "/Users/eugenemekhedov/Documents/TFF/School/apply/admin.py", line 403, in distribution_of_participants_best
+    registerUsers(member, project)
+  File "/Users/eugenemekhedov/Documents/TFF/School/apply/admin.py", line 436, in registerUsers
+    password=passForNewUser)
+  File "/Library/Python/2.7/site-packages/django/contrib/auth/models.py", line 157, in create_user
+    return self._create_user(username, email, password, **extra_fields)
+  File "/Library/Python/2.7/site-packages/django/contrib/auth/models.py", line 151, in _create_user
+    user.save(using=self._db)
+  File "/Library/Python/2.7/site-packages/django/contrib/auth/base_user.py", line 80, in save
+    super(AbstractBaseUser, self).save(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 796, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 824, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 908, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 947, in _do_insert
+    using=using, raw=raw)
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1043, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 1054, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 112, in execute
+    return self.cursor.execute(query, args)
+  File "/Library/Python/2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+IntegrityError: (1062, "Duplicate entry 'Elizaveta' for key 'username'")
+Internal Server Error: /chat/room/96/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/channels/handler.py", line 240, in process_exception_by_middleware
+    return super(AsgiHandler, self).process_exception_by_middleware(exception, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/eugenemekhedov/Documents/TFF/School/chat/views.py", line 82, in chatRoom
+    args["sender"] = applyApplication.objects.get(id=member.id)
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+DoesNotExist: applyApplication matching query does not exist.
+Internal Server Error: /chat/room/79/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/channels/handler.py", line 240, in process_exception_by_middleware
+    return super(AsgiHandler, self).process_exception_by_middleware(exception, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/eugenemekhedov/Documents/TFF/School/chat/views.py", line 82, in chatRoom
+    args["sender"] = applyApplication.objects.get(id=member.id)
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+DoesNotExist: applyApplication matching query does not exist.
+Internal Server Error: /api/chat/rooms/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/channels/handler.py", line 240, in process_exception_by_middleware
+    return super(AsgiHandler, self).process_exception_by_middleware(exception, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Library/Python/2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Library/Python/2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/rest_framework/generics.py", line 240, in get
+    return self.list(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/rest_framework/mixins.py", line 48, in list
+    return Response(serializer.data)
+  File "/Library/Python/2.7/site-packages/rest_framework/serializers.py", line 729, in data
+    ret = super(ListSerializer, self).data
+  File "/Library/Python/2.7/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/Library/Python/2.7/site-packages/rest_framework/serializers.py", line 647, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/Library/Python/2.7/site-packages/rest_framework/serializers.py", line 500, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/Library/Python/2.7/site-packages/rest_framework/serializers.py", line 487, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/Library/Python/2.7/site-packages/rest_framework/fields.py", line 463, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `surname` on serializer `UserProfileSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `ManyRelatedManager` instance.
+Original exception text was: 'ManyRelatedManager' object has no attribute 'surname'.
+Internal Server Error: /api/chat/rooms/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/channels/handler.py", line 240, in process_exception_by_middleware
+    return super(AsgiHandler, self).process_exception_by_middleware(exception, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Library/Python/2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Library/Python/2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/rest_framework/generics.py", line 240, in get
+    return self.list(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/rest_framework/mixins.py", line 48, in list
+    return Response(serializer.data)
+  File "/Library/Python/2.7/site-packages/rest_framework/serializers.py", line 729, in data
+    ret = super(ListSerializer, self).data
+  File "/Library/Python/2.7/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/Library/Python/2.7/site-packages/rest_framework/serializers.py", line 647, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/Library/Python/2.7/site-packages/rest_framework/serializers.py", line 500, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/Library/Python/2.7/site-packages/rest_framework/serializers.py", line 487, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/Library/Python/2.7/site-packages/rest_framework/fields.py", line 463, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `surname` on serializer `UserProfileSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `ManyRelatedManager` instance.
+Original exception text was: 'ManyRelatedManager' object has no attribute 'surname'.
+Internal Server Error: /profile/1
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/channels/handler.py", line 240, in process_exception_by_middleware
+    return super(AsgiHandler, self).process_exception_by_middleware(exception, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/eugenemekhedov/Documents/TFF/School/perconalPage/views.py", line 17, in perconal_page
+    user = applyApplication.objects.get(id=user_id)
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+DoesNotExist: applyApplication matching query does not exist.

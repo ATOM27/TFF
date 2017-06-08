@@ -50,7 +50,10 @@ def apply_form(request):
             newApplication = applyApplication(name=form["name"], surname=form["surname"], gender=form["gender"], image=form["image"],
                                           dateOfBirth=form["dateOfBirth"], country=form["country"], city=form["city"],
                                           email=form["email"], placeOfWorkOrStudy=form["placeOfWorkOrStudy"],
-                                          speciality=form["speciality"], motivationMessage=form["motivationMessage"])
+                                          speciality=form["speciality"], motivationMessage=form["motivationMessage"], faceBookLink=form["faceBookLink"],
+                                              skypeLink=form["skypeLink"], telegrammLink=form["telegrammLink"], googlePlusLink=form["googlePlusLink"],
+                                              instagrammLink=form["instagrammLink"], twitterLink=form["twitterLink"], behanceLink=form["behanceLink"],
+                                              linkedInLink=form["linkedInLink"])
             newApplication.save()
             applyApp = applyApplication.objects.get(name=form["name"], surname=form["surname"],
                                                    gender=form["gender"],
@@ -59,7 +62,14 @@ def apply_form(request):
                                                    email=form["email"],
                                                    placeOfWorkOrStudy=form["placeOfWorkOrStudy"],
                                                    speciality=form["speciality"],
-                                                   motivationMessage=form["motivationMessage"]
+                                                   motivationMessage=form["motivationMessage"],
+                                                   faceBookLink = form["faceBookLink"],
+                                                   skypeLink = form["skypeLink"],
+                                                   telegrammLink = form["telegrammLink"], googlePlusLink =form["googlePlusLink"],
+                                                   instagrammLink = form["instagrammLink"],
+                                                   twitterLink = form["twitterLink"],
+                                                   behanceLink = form["behanceLink"],
+                                                   linkedInLink =form["linkedInLink"]
                                                    )
 
 

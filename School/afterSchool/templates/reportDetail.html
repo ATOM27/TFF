@@ -1,0 +1,54 @@
+{% extends 'main.html' %}
+<!--  <body class="no-sidebar"> -->
+{% load staticfiles %}
+{% block title %}<title>No Sidebar - Twenty by HTML5 UP</title>{% endblock %}
+			<!-- Main -->
+
+{% block banner %}
+				<article id="main">
+				<header class="special container">
+{#						<span class="icon fa-mobile"></span>#}
+                    <h2><strong>{{ news.title }}</strong></h2>
+{#						<p>Where that in the center faces the nameless horrors alone.</p>#}
+					</header>
+{% endblock %}
+{% block content %}
+				<!-- One -->
+				<section class="wrapper style4 container 80%">
+
+							<!-- Content -->
+								<div class="content">
+									<section>
+										<center><img src="{{ news.image.url }}" alt="" width="80%"/></center>
+
+										<p>{{ news.text|safe }}</p>
+									</section>
+								</div>
+                                {% if show %}
+                                    Our Reviews:<br><p><p>
+                                {% endif %}
+                                {% for comment in news.comment.all %}
+
+                                    {% if comment.applyApp.image %}
+
+									    <img src="{{ comment.applyApp.image.url }}" width="50px" height="50px" style="border-radius: 50%;">
+									{% else %}
+									    <img src="{% static 'assets/images/qa.png'%}" width="50px" height="50px">
+									{% endif %}{{ comment.applyApp.name }} {{ comment.applyApp.surname }}<br>{{ comment.comment|safe }}
+                                    <br>
+                                {% endfor %}
+
+                {% if showForm %}
+<form action="" method="post">
+If you want to take a recomendation latter and sertificate you must write a report about our course!
+    {{ form.media }}
+    {% for field in form %}
+        {{field.errors}}
+        {{ field }}
+    {% endfor %}
+<br><input type="submit">
+</form>
+    {% endif %}
+						</section>
+
+{% endblock %}

@@ -20,13 +20,14 @@ from django.conf.urls.static import static
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 import settings
 from projectsTestsQuestions.views import *
-from machina.app import board
-from chat.views import chatRoom
+# from machina.app import board
+from chat.views import chatRooms, chatRoom, groupChat
 
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', main),
+    url(r'^page/(\d+)/$', mainTwo),
     url(r'^index/$', main),
     url(r'^sign_in/', include('login.urls')),
     url(r'^sign_out/', include('login.urls')),
@@ -39,11 +40,15 @@ urlpatterns = [
     url(r'^project/(\d+)/$', projectShow),
     url(r'^newsproject/$', newsForCurrentProject),
     url(r'^newsproject/(\d+)/(\d+)/$', currentNewsForCurrentProject),
-    url(r'^messages/', include('django_messages.urls')),
-    url(r'^chat/(\d+)', chatRoom),
+    # url(r'^messages/', include('django_messages.urls')),
+    url(r'^chat/group/$', groupChat),
+    url(r'^chat/room/(\d+)/$', chatRoom),
+    url(r'^reports/', include('afterSchool.urls')),
+    url(r'^chat/', chatRooms),
     url(r'^ckeditor/', include('ckeditor_uploader.urls')),
-    url(r'^forum/', include(board.urls)),
+    # url(r'^forum/', include(board.urls)),
     url(r'^api/', include('api.urls'),),
+    url(r'^pdf/', pdf),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

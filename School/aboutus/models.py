@@ -6,5 +6,5 @@ from django.db import models
 # Create your models here.
 
 class AboutUs(models.Model):
-    image = models.ImageField(blank=True, upload_to="aboutUs/", )
+    image = models.ImageField(upload_to="aboutUs/", )
     description = RichTextUploadingField()

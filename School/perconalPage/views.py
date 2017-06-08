@@ -5,6 +5,8 @@ from School.functions import get_all_projects
 from apply.models import Destribution
 from django.contrib.auth.models import User
 from projectsTestsQuestions.models import Project
+from chat.models import Room
+from forms import editPersonalInfoForm
 
 from apply.forms import applyForm
 
@@ -17,6 +19,11 @@ def perconal_page(request, user_id):
     args["userApply"] = user
     args["projects"] = get_all_projects
     args["correctUser"] = False
+    for project in get_all_projects():
+        for member in project.members.all():
+            if(member.id == user.id):
+                args['proj'] = project
+                break
     if request.user.is_authenticated():
         if request.user.username == user.name and request.user.email == user.email:
             args["correctUser"] = True
@@ -33,14 +40,18 @@ def edit_personal_information(request, user_id):
     dataUser = applyApplication.objects.get(id=user_id)
     print "-------------------"
     print dataUser
-    form = applyForm(initial = {'name' : dataUser.name, 'surname' : dataUser.surname, "gender" : dataUser.gender, 'image' : dataUser.image, 'dateOfBirth': dataUser.dateOfBirth,
+    form = editPersonalInfoForm(initial = {'name' : dataUser.name, 'surname' : dataUser.surname, "gender" : dataUser.gender, 'image' : dataUser.image, 'dateOfBirth': dataUser.dateOfBirth,
                  'country': dataUser.country, 'city': dataUser.city, 'email' : dataUser.email, 'placeOfWorkOrStudy' : dataUser.placeOfWorkOrStudy,
-                 'speciality' : dataUser.speciality, 'motivationMessage' : dataUser.motivationMessage})
+                 'speciality' : dataUser.speciality, 'faceBookLink' : dataUser.faceBookLink,
+                 'skypeLink': dataUser.skypeLink, 'telegrammLink': dataUser.telegrammLink, 'googlePlusLink': dataUser.googlePlusLink, 'instagrammLink': dataUser.instagrammLink,
+                 'twitterLink': dataUser.twitterLink, 'behanceLink': dataUser.behanceLink, 'linkedInLink': dataUser.linkedInLink})
+
     print "=========="
     print form
-    if request.method == "POST":
-        form = applyForm(request.POST, request.FILES or None)
 
+    if request.method == "POST":
+        form = editPersonalInfoForm(request.POST, request.FILES or None)
+        # form["motivationMessage"] = dataUser.motivationMessage
         if form.is_valid():
 
             form = form.cleaned_data
@@ -57,7 +68,15 @@ def edit_personal_information(request, user_id):
             newApplication.email = form["email"]
             newApplication.placeOfWorkOrStudy = form["placeOfWorkOrStudy"]
             newApplication.speciality = form["speciality"]
-            newApplication.motivationMessage = form["motivationMessage"]
+            # newApplication.motivationMessage = form["motivationMessage"]
+            newApplication.faceBookLink = form["faceBookLink"]
+            newApplication.skypeLink = form["skypeLink"]
+            newApplication.telegrammLink = form["telegrammLink"]
+            newApplication.googlePlusLink = form["googlePlusLink"]
+            newApplication.instagrammLink = form["instagrammLink"]
+            newApplication.twitterLink = form["twitterLink"]
+            newApplication.behanceLink = form["behanceLink"]
+            newApplication.linkedInLink = form["linkedInLink"]
             newApplication.save()
 
             return redirect('/profile/%s' % user_id)

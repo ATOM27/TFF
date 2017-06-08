@@ -1,9 +1,12 @@
+# -*- coding: utf-8 -*-
 import json
 from django.db import models
 from django.utils.six import python_2_unicode_compatible
 from channels import Group
 from django.contrib.auth.models import User
 from django.utils import timezone
+from projectsTestsQuestions.models import Project
+from apply.models import applyApplication
 
 from .settings import MSG_TYPE_MESSAGE
 
@@ -19,6 +22,9 @@ class Room(models.Model):
 
     # If only "staff" users are allowed (is_staff on django's User)
     staff_only = models.BooleanField(default=False)
+    project = models.ForeignKey(Project, blank=True, null=True)
+    members = models.ManyToManyField(User)
+    membersApplyApp = models.ManyToManyField(applyApplication, blank=True, null=True)
 
     def __str__(self):
         return self.title
@@ -35,7 +41,12 @@ class Room(models.Model):
         """
         Called to send a message to the room on behalf of a user.
         """
-        final_msg = {'room': str(self.id), 'message': message, 'username': user.username, 'msg_type': msg_type}
+        applyApp = applyApplication.objects.get(id=user.id)
+        if (applyApp.image):
+            image = "/media/" + applyApp.image.name + "/";
+        else:
+            image = ""
+        final_msg = {'room': str(self.id), 'message': message, 'username': user.username, 'userid':str(applyApp.id), 'userimage':image, 'msg_type': msg_type}
         if msg_type == 0:
             message = Message.objects.create(room=self, user=user, message=message)
         # Send out the message to everyone in the room

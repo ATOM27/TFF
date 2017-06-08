@@ -26,8 +26,8 @@
 
 									<form action="" method="post" name="formApplyHTML" enctype="multipart/form-data">
 										{% for field in form %}
-
-											{% if field.html_name == motivationMessage or field.html_name == dateOfBirth%}
+                                            {% if field.html_name != motivationMessage %}
+											{% if field.html_name == dateOfBirth%}
 												<div class="12u">
 											{% else %}
 											<div class="6u 12u(mobile)">
@@ -39,6 +39,7 @@
 												{{ field }}
 											</div>
 											<br>
+                                            {% endif %}
 										{% endfor %}
 											<h3>Please select priority of the projects you want to be</h3>
 													<p>

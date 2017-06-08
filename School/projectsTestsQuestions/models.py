@@ -14,7 +14,7 @@ class Subject(models.Model):
 
 class Project(models.Model):
     project_name = models.CharField(max_length=300)
-    image = models.ImageField(blank=True, upload_to="projectImages/",)
+    image = models.ImageField(upload_to="projectImages/",)
     description = RichTextUploadingField()
     mentor_id = models.ForeignKey(User,blank=True, null=True, related_name='+')
     mentor_image = models.ImageField(blank=True, upload_to="projectMentorImages/", )
@@ -27,8 +27,8 @@ class Project(models.Model):
         return self.project_name
 
     def get_short_project_name(self):
-        if len(self.project_name) > 30:
-            new_project_name = self.project_name[:30] + "..."
+        if len(self.project_name) > 20:
+            new_project_name = self.project_name[:20] + "..."
             return new_project_name
         else:
             return self.project_name
@@ -59,6 +59,7 @@ class Project_news(models.Model):
     title = models.CharField(max_length=300)
     image = models.ImageField(blank=True, upload_to="newsForCurrentProjectImages/",)
     text = RichTextUploadingField()
+    date = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         return self.title

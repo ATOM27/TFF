@@ -37,7 +37,7 @@
 				<section class="wrapper style3 container special">
 
 							<header class="major">
-								<h2>Next look at this <strong>cool stuff</strong></h2>
+								<h2>Next look at this <strong>news</strong></h2>
 							</header>
 
 				{% for each_news in news %}
@@ -69,6 +69,9 @@
 							</div>
 					{% endif %}
 					{% endfor %}
+                    {% for page in range %}
+                        <a href="/page/{{ page }}/">{{ page }}</a>
+                    {% endfor %}
 							<!--<div class="row">-->
 								<!--<div class="6u 12u(narrower)">-->
 
@@ -108,7 +111,7 @@
 				<section id="cta">
 
 					<header>
-						<h2>Ready to do <strong>join our school</strong>?</h2>
+						<h2>Ready to <strong>join our school</strong>?</h2>
 						<p>Apply your application form <strong>NOW!</strong></p>
 					</header>
 					<footer>

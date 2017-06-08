@@ -2,98 +2,58 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4dc43b59-afb2-4141-9742-13d3c81a82ce" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/School/aboutus/templates/aboutus.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/School/aboutus/urls.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/School/chat/consumers.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/School/chat/exceptions.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/School/chat/templates/baseChat.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/School/chat/templates/chat.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/School/static/chatt/jquery-1.12.2.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/School/static/chatt/style.css" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/School/apply/migrations/0001_initial.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/School/apply/migrations/0002_testsapply.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/School/apply/migrations/0003_projectpriority.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/School/apply/migrations/0004_auto_20160526_1845.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/School/apply/migrations/0005_testsapply_subject_id.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/School/apply/migrations/0006_destribution.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/School/apply/migrations/0007_auto_20160528_2323.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/School/apply/migrations/0008_applyapplication_image.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/School/apply/migrations/0009_auto_20160603_0649.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/School/apply/migrations/0010_auto_20160603_0650.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/School/apply/migrations/0011_auto_20160603_0704.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/School/apply/migrations/0012_auto_20160603_0706.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/School/apply/migrations/0013_auto_20160603_0714.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/School/apply/migrations/0014_auto_20160605_1048.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/School/apply/migrations/0015_auto_20160605_1050.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/School/apply/migrations/0016_auto_20160605_1102.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/School/django_messages/migrations/0001_initial.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/School/django_messages/migrations/0002_auto_20160607_0852.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/School/news/migrations/0001_initial.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/School/news/migrations/0002_news_paragraph_image.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/School/news/migrations/0003_auto_20160504_1359.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/School/news/migrations/0004_auto_20170421_1058.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/School/news/migrations/0005_auto_20170421_1102.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/School/news/migrations/0006_auto_20170421_1103.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/School/projectsTestsQuestions/migrations/0001_initial.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/School/projectsTestsQuestions/migrations/0002_subjects.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/School/projectsTestsQuestions/migrations/0003_answers.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/School/projectsTestsQuestions/migrations/0004_tests.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/School/projectsTestsQuestions/migrations/0005_auto_20160506_2250.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/School/projectsTestsQuestions/migrations/0006_auto_20160506_2252.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/School/projectsTestsQuestions/migrations/0007_auto_20160521_1557.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/School/projectsTestsQuestions/migrations/0008_auto_20160521_1559.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/School/projectsTestsQuestions/migrations/0009_auto_20160524_1952.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/School/projectsTestsQuestions/migrations/0010_auto_20160524_1953.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/School/projectsTestsQuestions/migrations/0011_auto_20160524_2032.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/School/projectsTestsQuestions/migrations/0012_auto_20160525_1028.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/School/projectsTestsQuestions/migrations/0013_auto_20160525_1042.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/School/projectsTestsQuestions/migrations/0014_markforeachproject.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/School/projectsTestsQuestions/migrations/0015_auto_20160526_1840.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/School/projectsTestsQuestions/migrations/0016_auto_20160526_1915.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/School/projectsTestsQuestions/migrations/0017_auto_20160526_1916.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/School/projectsTestsQuestions/migrations/0018_project_news.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/School/projectsTestsQuestions/migrations/0019_auto_20170425_1115.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/School/projectsTestsQuestions/migrations/0020_auto_20170427_0926.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SchoolDB_2016-06-05.sql" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/School/static/assets/images/behance.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/School/static/assets/images/facebook.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/School/static/assets/images/google-plus.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/School/static/assets/images/instagram.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/School/static/assets/images/linkedin.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/School/static/assets/images/skype.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/School/static/assets/images/telegram.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/School/static/assets/images/twitter.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/School/afterSchool/forms.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/School/afterSchool/templates/reportDetail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/School/afterSchool/templates/reportList.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/School/afterSchool/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/School/perconalPage/forms.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/School/chat/templates/baseChat.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SchoolDB_2017-05-15.sql" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/School/School/routing.py" afterPath="$PROJECT_DIR$/School/School/routing.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/School/School/settings.py" afterPath="$PROJECT_DIR$/School/School/settings.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/School/School/urls.py" afterPath="$PROJECT_DIR$/School/School/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/School/School/views.py" afterPath="$PROJECT_DIR$/School/School/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/School/aboutus/models.py" afterPath="$PROJECT_DIR$/School/aboutus/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/School/aboutus/views.py" afterPath="$PROJECT_DIR$/School/aboutus/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/School/api/permissions.py" afterPath="$PROJECT_DIR$/School/api/permissions.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/School/api/serializers.py" afterPath="$PROJECT_DIR$/School/api/serializers.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/School/api/urls.py" afterPath="$PROJECT_DIR$/School/api/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/School/api/views.py" afterPath="$PROJECT_DIR$/School/api/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/School/apply/admin.py" afterPath="$PROJECT_DIR$/School/apply/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/School/django_messages/forms.py" afterPath="$PROJECT_DIR$/School/django_messages/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/School/django_messages/locale/ar/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/School/django_messages/locale/ar/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/School/django_messages/locale/cs/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/School/django_messages/locale/cs/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/School/django_messages/locale/da/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/School/django_messages/locale/da/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/School/django_messages/locale/de/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/School/django_messages/locale/de/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/School/django_messages/locale/el/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/School/django_messages/locale/el/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/School/django_messages/locale/es/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/School/django_messages/locale/es/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/School/django_messages/locale/es_AR/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/School/django_messages/locale/es_AR/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/School/django_messages/locale/eu/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/School/django_messages/locale/eu/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/School/django_messages/locale/fa/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/School/django_messages/locale/fa/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/School/django_messages/locale/fr/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/School/django_messages/locale/fr/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/School/django_messages/locale/it/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/School/django_messages/locale/it/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/School/django_messages/locale/ko/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/School/django_messages/locale/ko/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/School/django_messages/locale/lt/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/School/django_messages/locale/lt/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/School/django_messages/locale/nl/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/School/django_messages/locale/nl/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/School/django_messages/locale/pl/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/School/django_messages/locale/pl/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/School/django_messages/locale/pt_BR/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/School/django_messages/locale/pt_BR/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/School/django_messages/locale/ro/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/School/django_messages/locale/ro/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/School/django_messages/locale/ru/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/School/django_messages/locale/ru/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/School/django_messages/locale/zh_CN/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/School/django_messages/locale/zh_CN/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/School/django_messages/models.py" afterPath="$PROJECT_DIR$/School/django_messages/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/School/django_messages/tests.py" afterPath="$PROJECT_DIR$/School/django_messages/tests.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/School/projectsTestsQuestions/admin.py" afterPath="$PROJECT_DIR$/School/projectsTestsQuestions/admin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/School/apply/forms.py" afterPath="$PROJECT_DIR$/School/apply/forms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/School/apply/models.py" afterPath="$PROJECT_DIR$/School/apply/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/School/apply/views.py" afterPath="$PROJECT_DIR$/School/apply/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/School/chat/models.py" afterPath="$PROJECT_DIR$/School/chat/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/School/chat/templates/chat.html" afterPath="$PROJECT_DIR$/School/chat/templates/chat.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/School/chat/utils.py" afterPath="$PROJECT_DIR$/School/chat/utils.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/School/chat/views.py" afterPath="$PROJECT_DIR$/School/chat/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/School/django_messages/views.py" afterPath="$PROJECT_DIR$/School/django_messages/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/School/login/views.py" afterPath="$PROJECT_DIR$/School/login/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/School/news/models.py" afterPath="$PROJECT_DIR$/School/news/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/School/news/templates/left-sidebar.html" afterPath="$PROJECT_DIR$/School/news/templates/left-sidebar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/School/news/templates/no-sidebar.html" afterPath="$PROJECT_DIR$/School/news/templates/no-sidebar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/School/news/templates/right-sidebar.html" afterPath="$PROJECT_DIR$/School/news/templates/right-sidebar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/School/news/views.py" afterPath="$PROJECT_DIR$/School/news/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/School/perconalPage/models.py" afterPath="$PROJECT_DIR$/School/perconalPage/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/School/perconalPage/templates/edit_personal_page.html" afterPath="$PROJECT_DIR$/School/perconalPage/templates/edit_personal_page.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/School/perconalPage/templates/personal_page.html" afterPath="$PROJECT_DIR$/School/perconalPage/templates/personal_page.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/School/perconalPage/views.py" afterPath="$PROJECT_DIR$/School/perconalPage/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/School/projectsTestsQuestions/models.py" afterPath="$PROJECT_DIR$/School/projectsTestsQuestions/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/School/projectsTestsQuestions/templates/listOfMembers.html" afterPath="$PROJECT_DIR$/School/projectsTestsQuestions/templates/listOfMembers.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/School/projectsTestsQuestions/templates/pageForCurrentProject.html" afterPath="$PROJECT_DIR$/School/projectsTestsQuestions/templates/pageForCurrentProject.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/School/projectsTestsQuestions/templates/project.html" afterPath="$PROJECT_DIR$/School/projectsTestsQuestions/templates/project.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/School/projectsTestsQuestions/views.py" afterPath="$PROJECT_DIR$/School/projectsTestsQuestions/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/School/static/assets/css/main.css" afterPath="$PROJECT_DIR$/School/static/assets/css/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main.html" afterPath="$PROJECT_DIR$/templates/main.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/начальная.sql" afterPath="$PROJECT_DIR$/начальная.sql" />
     </list>
     <ignored path="TFF.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -126,37 +86,45 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/School/School/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="146" column="26" selection-start-line="146" selection-start-column="26" selection-end-line="146" selection-end-column="26" />
+            <state relative-caret-position="1920">
+              <caret line="128" column="1" selection-start-line="128" selection-start-column="1" selection-end-line="128" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/School/School/urls.py">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/School/aboutus/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="33" column="38" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
-              <folding>
-                <element signature="e#639#680#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/School/School/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+            <state relative-caret-position="105">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wsgi.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/School/School/wsgi.py">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/School/afterSchool/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/School/apply/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="690">
+              <caret line="49" column="33" selection-start-line="49" selection-start-column="33" selection-end-line="49" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/School/chat/models.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -165,24 +133,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/School/api/urls.py">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/School/login/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="66" selection-start-line="20" selection-start-column="66" selection-end-line="20" selection-end-column="66" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <element signature="e#0#32#0" expanded="true" />
+                <element signature="e#0#39#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/School/api/views.py">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/School/news/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/School/perconalPage/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -190,19 +172,23 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/School/projectsTestsQuestions/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-              <folding />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/School/projectsTestsQuestions/views.py">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/School/School/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="67" column="28" selection-start-line="67" selection-start-column="28" selection-end-line="67" selection-end-column="28" />
-              <folding />
+            <state relative-caret-position="720">
+              <caret line="54" column="23" selection-start-line="54" selection-start-column="23" selection-end-line="54" selection-end-column="23" />
+              <folding>
+                <element signature="e#639#680#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -223,57 +209,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/School/apply/views.py" />
+        <option value="$PROJECT_DIR$/School/projectsTestsQuestions/views.py" />
+        <option value="$PROJECT_DIR$/School/projectsTestsQuestions/templates/project.html" />
+        <option value="$PROJECT_DIR$/School/django_messages/views.py" />
+        <option value="$USER_HOME$/Downloads/left-sidebar.html" />
+        <option value="$PROJECT_DIR$/School/perconalPage/templates/personal_page.html" />
+        <option value="$PROJECT_DIR$/School/School/routing.py" />
+        <option value="$PROJECT_DIR$/School/chat/consumers.py" />
+        <option value="$PROJECT_DIR$/School/chat/utils.py" />
+        <option value="$PROJECT_DIR$/School/chat/templates/chatRooms.html" />
+        <option value="$PROJECT_DIR$/School/login/urls.py" />
+        <option value="$PROJECT_DIR$/School/login/views.py" />
+        <option value="$PROJECT_DIR$/School/api/urls.py" />
+        <option value="$PROJECT_DIR$/School/chat/templates/chat.html" />
+        <option value="$PROJECT_DIR$/templates/mytemplate.html" />
+        <option value="$PROJECT_DIR$/School/news/views.py" />
+        <option value="$PROJECT_DIR$/School/news/templates/left-sidebar.html" />
         <option value="$PROJECT_DIR$/School/news/templates/no-sidebar.html" />
         <option value="$PROJECT_DIR$/School/news/templates/right-sidebar.html" />
-        <option value="$PROJECT_DIR$/School/news/templates/left-sidebar.html" />
-        <option value="$PROJECT_DIR$/School/static/assets/css/main.css" />
-        <option value="$PROJECT_DIR$/School/perconalPage/views.py" />
-        <option value="$PROJECT_DIR$/School/projectsTestsQuestions/templates/pageForCurrentProject.html" />
+        <option value="$PROJECT_DIR$/School/afterSchool/context_processors.py" />
         <option value="$PROJECT_DIR$/School/projectsTestsQuestions/templates/currentProjectNews.html" />
-        <option value="$PROJECT_DIR$/templates/machina/board_base.html" />
-        <option value="$PROJECT_DIR$/School/api/permissions.py" />
-        <option value="$PROJECT_DIR$/School/chat/urls.py" />
-        <option value="/Library/Python/2.7/site-packages/Gnotty-0.2.7-py2.7.egg/gnotty/urls.py" />
-        <option value="/Library/Python/2.7/site-packages/Gnotty-0.2.7-py2.7.egg/gnotty/example_project/settings.py" />
-        <option value="/Library/Python/2.7/site-packages/Gnotty-0.2.7-py2.7.egg/gnotty/migrations/0002_auto__add_field_ircmessage_join_or_leave.py" />
-        <option value="/Library/Python/2.7/site-packages/django_live-0.1.8-py2.7.egg/live/urls.py" />
-        <option value="$PROJECT_DIR$/templates/chat.html" />
-        <option value="$PROJECT_DIR$/School/api/consumers.py" />
-        <option value="$PROJECT_DIR$/School/api/forms.py" />
-        <option value="$PROJECT_DIR$/templates/mailme.html" />
-        <option value="$PROJECT_DIR$/School/chat/models.py" />
-        <option value="$PROJECT_DIR$/School/chat/templates/index.html" />
-        <option value="$PROJECT_DIR$/School/projectsTestsQuestions/migrations/0003_answers.py" />
-        <option value="$PROJECT_DIR$/School/projectsTestsQuestions/migrations/0002_subjects.py" />
-        <option value="$PROJECT_DIR$/School/projectsTestsQuestions/migrations/0004_tests.py" />
-        <option value="$PROJECT_DIR$/School/apply/views.py" />
-        <option value="$PROJECT_DIR$/School/School/functions.py" />
+        <option value="$PROJECT_DIR$/templates/main.html" />
+        <option value="$PROJECT_DIR$/School/afterSchool/urls.py" />
+        <option value="$PROJECT_DIR$/School/projectsTestsQuestions/templates/pageForCurrentProject.html" />
+        <option value="$PROJECT_DIR$/School/perconalPage/templates/edit_personal_page.html" />
+        <option value="$PROJECT_DIR$/School/perconalPage/views.py" />
+        <option value="$PROJECT_DIR$/School/perconalPage/forms.py" />
+        <option value="$PROJECT_DIR$/School/perconalPage/models.py" />
+        <option value="$PROJECT_DIR$/School/afterSchool/models.py" />
+        <option value="$PROJECT_DIR$/School/afterSchool/forms.py" />
+        <option value="$PROJECT_DIR$/School/afterSchool/templates/reportList.html" />
+        <option value="$PROJECT_DIR$/School/afterSchool/views.py" />
+        <option value="$PROJECT_DIR$/School/afterSchool/templates/reportDetail.html" />
+        <option value="$PROJECT_DIR$/School/static/assets/css/main.css" />
         <option value="$PROJECT_DIR$/School/apply/models.py" />
+        <option value="$PROJECT_DIR$/School/aboutus/views.py" />
+        <option value="$PROJECT_DIR$/School/afterSchool/admin.py" />
+        <option value="$PROJECT_DIR$/School/aboutus/models.py" />
         <option value="$PROJECT_DIR$/School/projectsTestsQuestions/models.py" />
-        <option value="$PROJECT_DIR$/School/projectsTestsQuestions/admin.py" />
-        <option value="$PROJECT_DIR$/School/news/views.py" />
-        <option value="$PROJECT_DIR$/School/login/views.py" />
-        <option value="$PROJECT_DIR$/School/chat/templates/base.html" />
+        <option value="$PROJECT_DIR$/School/news/models.py" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/School/School/views.py" />
         <option value="$PROJECT_DIR$/School/apply/admin.py" />
-        <option value="$PROJECT_DIR$/School/School/routing.py" />
-        <option value="$PROJECT_DIR$/School/chat/views.py" />
-        <option value="$PROJECT_DIR$/School/chat/templates/chat.html" />
-        <option value="$PROJECT_DIR$/School/projectsTestsQuestions/templates/project.html" />
-        <option value="$PROJECT_DIR$/School/projectsTestsQuestions/views.py" />
-        <option value="$PROJECT_DIR$/School/aboutus/models.py" />
-        <option value="$PROJECT_DIR$/School/aboutus/admin.py" />
-        <option value="$PROJECT_DIR$/School/aboutus/views.py" />
-        <option value="$PROJECT_DIR$/School/School/settings.py" />
-        <option value="$PROJECT_DIR$/School/aboutus/templates/aboutus.html" />
-        <option value="$PROJECT_DIR$/School/aboutus/urls.py" />
-        <option value="$PROJECT_DIR$/School/School/urls.py" />
-        <option value="$PROJECT_DIR$/templates/main.html" />
-        <option value="$PROJECT_DIR$/templates/index.html" />
-        <option value="$PROJECT_DIR$/School/projectsTestsQuestions/templates/listOfMembers.html" />
-        <option value="$PROJECT_DIR$/School/api/serializers.py" />
-        <option value="$PROJECT_DIR$/School/api/urls.py" />
+        <option value="$PROJECT_DIR$/School/api/permissions.py" />
         <option value="$PROJECT_DIR$/School/api/views.py" />
+        <option value="$PROJECT_DIR$/School/chat/views.py" />
+        <option value="$PROJECT_DIR$/School/chat/models.py" />
+        <option value="$PROJECT_DIR$/School/api/serializers.py" />
+        <option value="$PROJECT_DIR$/templates/contact.html" />
+        <option value="$PROJECT_DIR$/School/School/urls.py" />
+        <option value="$PROJECT_DIR$/School/School/settings.py" />
       </list>
     </option>
   </component>
@@ -312,6 +298,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -319,136 +306,6 @@
               <option name="myItemId" value="TFF" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; Python 2.7.10 (/usr/bin/python) &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TFF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; Python 2.7.10 (/usr/bin/python) &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="site-packages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TFF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; Python 2.7.10 (/usr/bin/python) &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="site-packages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="machina" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TFF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; Python 2.7.10 (/usr/bin/python) &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="site-packages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="machina" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TFF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; Python 2.7.10 (/usr/bin/python) &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="site-packages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="machina" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apps" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TFF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; Python 2.7.10 (/usr/bin/python) &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="site-packages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="machina" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apps" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forum_member" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -542,7 +399,287 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
+              <option name="myItemId" value="perconalPage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TFF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TFF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="School" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="perconalPage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TFF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TFF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="School" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="news" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TFF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TFF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="School" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="news" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TFF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TFF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="School" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="login" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TFF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TFF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="School" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="login" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TFF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TFF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="School" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="django_messages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TFF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TFF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="School" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TFF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TFF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="School" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TFF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TFF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="School" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apply" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TFF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TFF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="School" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apply" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TFF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TFF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="School" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="afterSchool" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TFF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TFF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="School" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="afterSchool" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TFF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TFF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="School" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aboutus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TFF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TFF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="School" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aboutus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -566,7 +703,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -589,11 +725,11 @@
       <recent name="$PROJECT_DIR$/templates/django-messages" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/School/afterSchool/templates" />
+      <recent name="$PROJECT_DIR$/School/static/assets/images" />
       <recent name="$PROJECT_DIR$/School/aboutus/templates" />
       <recent name="$PROJECT_DIR$/School/apply/migrations" />
       <recent name="$PROJECT_DIR$/School/static/chat" />
-      <recent name="$PROJECT_DIR$/School/chat/templates" />
-      <recent name="$PROJECT_DIR$/School/School" />
     </key>
   </component>
   <component name="RunManager" selected="Django server.TFF">
@@ -909,25 +1045,25 @@
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1672619" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16785714" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41575274" sideWeight="0.50714284" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901296" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32502493" sideWeight="0.47619048" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41575274" sideWeight="0.49285713" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29312065" sideWeight="0.47619048" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901296" sideWeight="0.48511904" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901296" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37686938" sideWeight="0.49285713" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -945,19 +1081,19 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/School/api/permissions.py</url>
-          <line>30</line>
-          <option name="timeStamp" value="75" />
+          <url>file://$PROJECT_DIR$/School/chat/consumers.py</url>
+          <line>92</line>
+          <option name="timeStamp" value="209" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/School/api/serializers.py</url>
+          <line>21</line>
+          <option name="timeStamp" value="225" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/School/api/permissions.py</url>
-          <line>35</line>
-          <option name="timeStamp" value="76" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/School/api/permissions.py</url>
-          <line>58</line>
-          <option name="timeStamp" value="86" />
+          <line>70</line>
+          <option name="timeStamp" value="243" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -967,178 +1103,297 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="97" />
+      <option name="time" value="245" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///Library/Python/2.7/site-packages/django/core/handlers/base.py">
+    <entry file="file://$PROJECT_DIR$/School/afterSchool/templates/reportDetail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="184" column="0" selection-start-line="184" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="540">
+          <caret line="36" column="61" selection-start-line="0" selection-start-column="0" selection-end-line="53" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/School/chat/models.py">
+    <entry file="file://$PROJECT_DIR$/School/afterSchool/templates/reportList.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="17" column="9" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="9" />
-          <folding />
+        <state relative-caret-position="345">
+          <caret line="23" column="48" selection-start-line="0" selection-start-column="0" selection-end-line="28" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/School/perconalPage/templates/personal_page.html">
+    <entry file="file://$PROJECT_DIR$/School/afterSchool/apps.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="17" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/School/perconalPage/templates/edit_personal_page.html">
+    <entry file="file://$PROJECT_DIR$/School/afterSchool/context_processors.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-          <folding />
+        <state relative-caret-position="105">
+          <caret line="7" column="28" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School/afterSchool/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="4" column="49" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School/afterSchool/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School/afterSchool/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="1" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School/afterSchool/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="40" column="53" selection-start-line="0" selection-start-column="0" selection-end-line="40" selection-end-column="53" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/School/apply/templates/apply.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="630">
+          <caret line="42" column="40" selection-start-line="0" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file:///Library/Python/2.7/site-packages/machina/models/__init__.py">
+    <entry file="file://$PROJECT_DIR$/School/apply/apps.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file:///Library/Python/2.7/site-packages/django/__init__.py">
+    <entry file="file://$PROJECT_DIR$/School/apply/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#39#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Python/2.7/site-packages/django_markdown/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Python/2.7/site-packages/machina/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Python/2.7/site-packages/machina/apps/forum_member/registry_config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Python/2.7/site-packages/machina/models/abstract_models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Python/2.7/site-packages/machina/core/db/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="51" column="4" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Python/2.7/site-packages/machina/apps/forum_member/abstract_models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="21" column="87" selection-start-line="21" selection-start-column="74" selection-end-line="21" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Python/2.7/site-packages/machina/apps/forum_member/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="77" selection-start-line="2" selection-start-column="77" selection-end-line="2" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Python/2.7/site-packages/machina/apps/forum_member/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="57" selection-start-line="4" selection-start-column="57" selection-end-line="4" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Python/2.7/site-packages/machina/models/fields.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="196" column="90" selection-start-line="196" selection-start-column="86" selection-end-line="196" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/School/apply/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="385" column="60" selection-start-line="385" selection-start-column="60" selection-end-line="385" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/School/School/routing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="63" selection-start-line="8" selection-start-column="63" selection-end-line="8" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/School/apply/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="690">
+          <caret line="49" column="25" selection-start-line="0" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/School/chat/templates/chat.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
-          <folding />
+        <state relative-caret-position="945">
+          <caret line="68" column="63" selection-start-line="0" selection-start-column="0" selection-end-line="273" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School/chat/templates/chatRooms.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="79" selection-start-line="28" selection-start-column="77" selection-end-line="28" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School/login/templates/sign_in.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="41" column="24" selection-start-line="0" selection-start-column="0" selection-end-line="54" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School/news/templates/left-sidebar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="41" column="36" selection-start-line="0" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School/news/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School/perconalPage/templates/edit_personal_page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="78" selection-start-line="0" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School/perconalPage/templates/personal_page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="78" column="40" selection-start-line="0" selection-start-column="0" selection-end-line="95" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School/perconalPage/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-330">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School/perconalPage/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="56" column="36" selection-start-line="0" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School/projectsTestsQuestions/templates/currentProjectNews.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School/projectsTestsQuestions/templates/listOfMembers.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="32" selection-start-line="0" selection-start-column="0" selection-end-line="78" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School/projectsTestsQuestions/templates/pageForCurrentProject.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="52" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="65" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School/projectsTestsQuestions/templates/project.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="144" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School/projectsTestsQuestions/templates/testsTemplate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School/projectsTestsQuestions/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1380">
+          <caret line="98" column="34" selection-start-line="0" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="51" column="26" selection-start-line="0" selection-start-column="0" selection-end-line="51" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="124" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="113" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/mytemplate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School/api/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School/api/permissions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="41" selection-start-line="0" selection-start-column="0" selection-end-line="73" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#38#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School/api/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="44" column="30" selection-start-line="0" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#38#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School/api/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="42" column="2" selection-start-line="0" selection-start-column="0" selection-end-line="42" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School/api/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="35" column="36" selection-start-line="0" selection-start-column="0" selection-end-line="165" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DjangoModelDependency/#Project">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DjangoModelDependency</ID>
+          <OriginalElement>#Project</OriginalElement>
+          <nodes>
+            <node x="" y="">afterSchool.models.reportComments</node>
+            <node x="" y="">django.contrib.auth.models.User</node>
+            <node x="" y="">apply.models.applyApplication</node>
+            <node x="" y="">projectsTestsQuestions.models.Project</node>
+            <node x="" y="">django.contrib.auth.models.Permission</node>
+            <node x="" y="">afterSchool.models.ReportProject</node>
+            <node x="" y="">django.contrib.contenttypes.models.ContentType</node>
+            <node x="" y="">django.contrib.auth.models.Group</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="307.0" y="215.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School/apply/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4770">
+          <caret line="325" column="23" selection-start-line="325" selection-start-column="23" selection-end-line="325" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/School/chat/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#35#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/School/chat/templates/baseChat.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-          <folding />
+        <state relative-caret-position="615">
+          <caret line="49" column="32" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -1152,245 +1407,107 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/School/chat/exceptions.py">
+    <entry file="file://$PROJECT_DIR$/School/apply/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="810">
+          <caret line="58" column="21" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/School/projectsTestsQuestions/templates/pageForCurrentProject.html">
+    <entry file="file://$PROJECT_DIR$/School/login/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="59" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="59" />
-          <folding />
+        <state relative-caret-position="420">
+          <caret line="35" column="24" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/School/School/functions.py">
+    <entry file="file://$PROJECT_DIR$/School/School/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/School/projectsTestsQuestions/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#32#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/School/aboutus/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#32#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/School/aboutus/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#35#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/School/aboutus/templates/aboutus.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="57" column="32" selection-start-line="57" selection-start-column="32" selection-end-line="57" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2016.1/python_stubs/348993582/itertools.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="212" column="6" selection-start-line="212" selection-start-column="6" selection-end-line="212" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/School/projectsTestsQuestions/templates/project.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1219">
-          <caret line="140" column="30" selection-start-line="140" selection-start-column="30" selection-end-line="140" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="43" column="59" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/School/static/assets/sass/libs/_skel.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="536" column="287" selection-start-line="536" selection-start-column="285" selection-end-line="536" selection-end-column="287" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/School/projectsTestsQuestions/templates/listOfMembers.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="19" column="50" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
+        <state relative-caret-position="1920">
+          <caret line="128" column="1" selection-start-line="128" selection-start-column="1" selection-end-line="128" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/School/aboutus/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#39#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/School/aboutus/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1640">
-          <caret line="41" column="60" selection-start-line="41" selection-start-column="60" selection-end-line="41" selection-end-column="60" />
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file:///Library/Python/2.7/site-packages/rest_framework/fields.py">
+    <entry file="file://$PROJECT_DIR$/School/afterSchool/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="1514" column="8" selection-start-line="1514" selection-start-column="8" selection-end-line="1514" selection-end-column="8" />
+        <state relative-caret-position="360">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/School/School/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="146" column="26" selection-start-line="146" selection-start-column="26" selection-end-line="146" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/School/School/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="33" column="38" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
-          <folding>
-            <element signature="e#639#680#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/School/School/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/School/School/wsgi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/School/api/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="66" selection-start-line="20" selection-start-column="66" selection-end-line="20" selection-end-column="66" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/School/api/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#39#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/School/apply/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        <state relative-caret-position="690">
+          <caret line="49" column="33" selection-start-line="49" selection-start-column="33" selection-end-line="49" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School/chat/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/School/login/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#39#0" expanded="false" />
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file:///Library/Python/2.7/site-packages/rest_framework/permissions.py">
+    <entry file="file://$PROJECT_DIR$/School/news/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="123" column="0" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/School/projectsTestsQuestions/views.py">
+    <entry file="file://$PROJECT_DIR$/School/perconalPage/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="67" column="28" selection-start-line="67" selection-start-column="28" selection-end-line="67" selection-end-column="28" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/School/projectsTestsQuestions/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/School/api/serializers.py">
+    <entry file="file://$PROJECT_DIR$/School/School/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="40" column="6" selection-start-line="40" selection-start-column="6" selection-end-line="40" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/School/api/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="720">
+          <caret line="54" column="23" selection-start-line="54" selection-start-column="23" selection-end-line="54" selection-end-column="23" />
+          <folding>
+            <element signature="e#639#680#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

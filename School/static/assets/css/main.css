@@ -1653,7 +1653,7 @@
 /* Section/Article */
 
 	section.special, article.special {
-		text-align: center;
+		text-align: left;
 	}
 
 	header.major {
@@ -3293,7 +3293,47 @@ ul.errorlist {
 }
 
 
+
 .profile p{
 	color: grey;
 }
 
+
+.container_message {
+	width: 100%;
+	min-height: 300px;
+	max-height: 600px;
+	border: 1px solid #ededed;
+	padding: 10px;
+	border-radius: 3px;
+	float: left;
+	overflow-y: auto;
+}
+
+.sender {
+	text-align: right;
+	padding: 5px;
+	background: #edf0f5;
+	border-radius: 3px;
+	margin: 2px;
+	vertical-align: middle;
+}
+
+.sender text {
+	max-width: 80%;
+}
+.reciever {
+	text-align: left;
+	padding: 5px;
+	background: #fdfdfd;
+	border-radius: 3px;
+	margin: 2px;
+	vertical-align: middle;
+}
+
+.message_area {
+	width: 80%;
+}
+#personal_messsage {
+	width: 80%;
+}

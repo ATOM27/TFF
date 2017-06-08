@@ -12,12 +12,12 @@
 					</header>
 
 					<!-- One -->
-						<section class="wrapper style4 special container 80%">
+						<section class="wrapper style4 container 80%">
 
 							<!-- Content -->
 								<div class="content">
                                     {% for news in newsInProject %}
-								<img src="{{ news.image.url }}" width="80%">
+								<center><img src="{{ news.image.url }}" width="80%"></center>
 									{{ news.get_short_text|safe }}
 									<a href="/newsproject/{{ project.id }}/{{ news.id }}">See more...</a>
                                     {% endfor %}
