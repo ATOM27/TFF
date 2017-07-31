@@ -458,3 +458,847 @@ Traceback (most recent call last):
   File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 385, in get
     self.model._meta.object_name
 DoesNotExist: applyApplication matching query does not exist.
+Not Found: /favicon.ico
+Internal Server Error: /pdf/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/channels/handler.py", line 240, in process_exception_by_middleware
+    return super(AsgiHandler, self).process_exception_by_middleware(exception, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/eugenemekhedov/Documents/TFF/School/School/views.py", line 107, in pdf
+    'args': results,
+  File "/Users/eugenemekhedov/Documents/TFF/School/School/views.py", line 94, in render_to_pdf
+    pdf = pisa.pisaDocument(StringIO.StringIO(html.encode("ISO-8859-1")), result)
+  File "/Library/Python/2.7/site-packages/django/utils/functional.py", line 15, in _curried
+    return _curried_func(*(args + moreargs), **dict(kwargs, **morekwargs))
+  File "/Library/Python/2.7/site-packages/django/utils/safestring.py", line 104, in _proxy_method
+    data = method(self, *args, **kwargs)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 247-250: ordinal not in range(256)
+Internal Server Error: /pdf/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/channels/handler.py", line 240, in process_exception_by_middleware
+    return super(AsgiHandler, self).process_exception_by_middleware(exception, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/eugenemekhedov/Documents/TFF/School/School/views.py", line 107, in pdf
+    'args': results,
+  File "/Users/eugenemekhedov/Documents/TFF/School/School/views.py", line 94, in render_to_pdf
+    pdf = pisa.pisaDocument(StringIO.StringIO(html.encode("ISO-8859-1")), result)
+  File "/Library/Python/2.7/site-packages/xhtml2pdf-0.2b1-py2.7.egg/xhtml2pdf/document.py", line 97, in pisaDocument
+    encoding, context=context, xml_output=xml_output)
+  File "/Library/Python/2.7/site-packages/xhtml2pdf-0.2b1-py2.7.egg/xhtml2pdf/document.py", line 59, in pisaStory
+    pisaParser(src, context, default_css, xhtml, encoding, xml_output)
+  File "/Library/Python/2.7/site-packages/xhtml2pdf-0.2b1-py2.7.egg/xhtml2pdf/parser.py", line 708, in pisaParser
+    pisaLoop(document, context)
+  File "/Library/Python/2.7/site-packages/xhtml2pdf-0.2b1-py2.7.egg/xhtml2pdf/parser.py", line 648, in pisaLoop
+    pisaLoop(node, context, path, **kw)
+  File "/Library/Python/2.7/site-packages/xhtml2pdf-0.2b1-py2.7.egg/xhtml2pdf/parser.py", line 593, in pisaLoop
+    pisaLoop(nnode, context, path, **kw)
+  File "/Library/Python/2.7/site-packages/xhtml2pdf-0.2b1-py2.7.egg/xhtml2pdf/parser.py", line 593, in pisaLoop
+    pisaLoop(nnode, context, path, **kw)
+  File "/Library/Python/2.7/site-packages/xhtml2pdf-0.2b1-py2.7.egg/xhtml2pdf/parser.py", line 593, in pisaLoop
+    pisaLoop(nnode, context, path, **kw)
+  File "/Library/Python/2.7/site-packages/xhtml2pdf-0.2b1-py2.7.egg/xhtml2pdf/parser.py", line 593, in pisaLoop
+    pisaLoop(nnode, context, path, **kw)
+  File "/Library/Python/2.7/site-packages/xhtml2pdf-0.2b1-py2.7.egg/xhtml2pdf/parser.py", line 537, in pisaLoop
+    CSS2Frag(context, kw, isBlock)
+  File "/Library/Python/2.7/site-packages/xhtml2pdf-0.2b1-py2.7.egg/xhtml2pdf/parser.py", line 279, in CSS2Frag
+    c.frag.backColor = getColor(c.cssAttr["background-color"])
+  File "/Library/Python/2.7/site-packages/xhtml2pdf-0.2b1-py2.7.egg/xhtml2pdf/util.py", line 98, in __call__
+    res = self.func(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/xhtml2pdf-0.2b1-py2.7.egg/xhtml2pdf/util.py", line 152, in getColor
+    return toColor(value, default)  # Calling the reportlab function
+  File "/Library/Python/2.7/site-packages/reportlab/lib/colors.py", line 870, in __call__
+    raise ValueError('Invalid color value %r' % arg)
+ValueError: Invalid color value 'media/certificate/certificate.png'
+Not Found: /messages/inbox/
+Internal Server Error: /pdf/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/channels/handler.py", line 240, in process_exception_by_middleware
+    return super(AsgiHandler, self).process_exception_by_middleware(exception, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/eugenemekhedov/Documents/TFF/School/School/views.py", line 107, in pdf
+    'results': results,
+  File "/Users/eugenemekhedov/Documents/TFF/School/School/views.py", line 94, in render_to_pdf
+    pdf = pisa.pisaDocument(StringIO.StringIO(html.encode("ISO-8859-1")), result)
+  File "/Library/Python/2.7/site-packages/xhtml2pdf-0.2b1-py2.7.egg/xhtml2pdf/document.py", line 97, in pisaDocument
+    encoding, context=context, xml_output=xml_output)
+  File "/Library/Python/2.7/site-packages/xhtml2pdf-0.2b1-py2.7.egg/xhtml2pdf/document.py", line 59, in pisaStory
+    pisaParser(src, context, default_css, xhtml, encoding, xml_output)
+  File "/Library/Python/2.7/site-packages/xhtml2pdf-0.2b1-py2.7.egg/xhtml2pdf/parser.py", line 708, in pisaParser
+    pisaLoop(document, context)
+  File "/Library/Python/2.7/site-packages/xhtml2pdf-0.2b1-py2.7.egg/xhtml2pdf/parser.py", line 648, in pisaLoop
+    pisaLoop(node, context, path, **kw)
+  File "/Library/Python/2.7/site-packages/xhtml2pdf-0.2b1-py2.7.egg/xhtml2pdf/parser.py", line 593, in pisaLoop
+    pisaLoop(nnode, context, path, **kw)
+  File "/Library/Python/2.7/site-packages/xhtml2pdf-0.2b1-py2.7.egg/xhtml2pdf/parser.py", line 593, in pisaLoop
+    pisaLoop(nnode, context, path, **kw)
+  File "/Library/Python/2.7/site-packages/xhtml2pdf-0.2b1-py2.7.egg/xhtml2pdf/parser.py", line 593, in pisaLoop
+    pisaLoop(nnode, context, path, **kw)
+  File "/Library/Python/2.7/site-packages/xhtml2pdf-0.2b1-py2.7.egg/xhtml2pdf/parser.py", line 537, in pisaLoop
+    CSS2Frag(context, kw, isBlock)
+  File "/Library/Python/2.7/site-packages/xhtml2pdf-0.2b1-py2.7.egg/xhtml2pdf/parser.py", line 279, in CSS2Frag
+    c.frag.backColor = getColor(c.cssAttr["background-color"])
+  File "/Library/Python/2.7/site-packages/xhtml2pdf-0.2b1-py2.7.egg/xhtml2pdf/util.py", line 98, in __call__
+    res = self.func(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/xhtml2pdf-0.2b1-py2.7.egg/xhtml2pdf/util.py", line 152, in getColor
+    return toColor(value, default)  # Calling the reportlab function
+  File "/Library/Python/2.7/site-packages/reportlab/lib/colors.py", line 870, in __call__
+    raise ValueError('Invalid color value %r' % arg)
+ValueError: Invalid color value '/media/certificate/certificate.png'
+Internal Server Error: /pdf/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/channels/handler.py", line 240, in process_exception_by_middleware
+    return super(AsgiHandler, self).process_exception_by_middleware(exception, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/eugenemekhedov/Documents/TFF/School/School/views.py", line 107, in pdf
+    'results': results,
+  File "/Users/eugenemekhedov/Documents/TFF/School/School/views.py", line 94, in render_to_pdf
+    pdf = pisa.pisaDocument(StringIO.StringIO(html.encode("ISO-8859-1")), result)
+  File "/Library/Python/2.7/site-packages/xhtml2pdf-0.2b1-py2.7.egg/xhtml2pdf/document.py", line 97, in pisaDocument
+    encoding, context=context, xml_output=xml_output)
+  File "/Library/Python/2.7/site-packages/xhtml2pdf-0.2b1-py2.7.egg/xhtml2pdf/document.py", line 59, in pisaStory
+    pisaParser(src, context, default_css, xhtml, encoding, xml_output)
+  File "/Library/Python/2.7/site-packages/xhtml2pdf-0.2b1-py2.7.egg/xhtml2pdf/parser.py", line 708, in pisaParser
+    pisaLoop(document, context)
+  File "/Library/Python/2.7/site-packages/xhtml2pdf-0.2b1-py2.7.egg/xhtml2pdf/parser.py", line 648, in pisaLoop
+    pisaLoop(node, context, path, **kw)
+  File "/Library/Python/2.7/site-packages/xhtml2pdf-0.2b1-py2.7.egg/xhtml2pdf/parser.py", line 593, in pisaLoop
+    pisaLoop(nnode, context, path, **kw)
+  File "/Library/Python/2.7/site-packages/xhtml2pdf-0.2b1-py2.7.egg/xhtml2pdf/parser.py", line 593, in pisaLoop
+    pisaLoop(nnode, context, path, **kw)
+  File "/Library/Python/2.7/site-packages/xhtml2pdf-0.2b1-py2.7.egg/xhtml2pdf/parser.py", line 593, in pisaLoop
+    pisaLoop(nnode, context, path, **kw)
+  File "/Library/Python/2.7/site-packages/xhtml2pdf-0.2b1-py2.7.egg/xhtml2pdf/parser.py", line 537, in pisaLoop
+    CSS2Frag(context, kw, isBlock)
+  File "/Library/Python/2.7/site-packages/xhtml2pdf-0.2b1-py2.7.egg/xhtml2pdf/parser.py", line 285, in CSS2Frag
+    c.frag.fontSize = max(getSize("".join(c.cssAttr["font-size"]), c.frag.fontSize, c.baseFontSize), 1.0)
+TypeError: sequence item 0: expected string or Unicode, tuple found
+Internal Server Error: /pdf/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/channels/handler.py", line 240, in process_exception_by_middleware
+    return super(AsgiHandler, self).process_exception_by_middleware(exception, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/eugenemekhedov/Documents/TFF/School/School/views.py", line 107, in pdf
+    'results': results,
+  File "/Users/eugenemekhedov/Documents/TFF/School/School/views.py", line 94, in render_to_pdf
+    pdf = pisa.pisaDocument(StringIO.StringIO(html.encode("ISO-8859-1")), result)
+  File "/Library/Python/2.7/site-packages/xhtml2pdf-0.2b1-py2.7.egg/xhtml2pdf/document.py", line 97, in pisaDocument
+    encoding, context=context, xml_output=xml_output)
+  File "/Library/Python/2.7/site-packages/xhtml2pdf-0.2b1-py2.7.egg/xhtml2pdf/document.py", line 59, in pisaStory
+    pisaParser(src, context, default_css, xhtml, encoding, xml_output)
+  File "/Library/Python/2.7/site-packages/xhtml2pdf-0.2b1-py2.7.egg/xhtml2pdf/parser.py", line 708, in pisaParser
+    pisaLoop(document, context)
+  File "/Library/Python/2.7/site-packages/xhtml2pdf-0.2b1-py2.7.egg/xhtml2pdf/parser.py", line 648, in pisaLoop
+    pisaLoop(node, context, path, **kw)
+  File "/Library/Python/2.7/site-packages/xhtml2pdf-0.2b1-py2.7.egg/xhtml2pdf/parser.py", line 593, in pisaLoop
+    pisaLoop(nnode, context, path, **kw)
+  File "/Library/Python/2.7/site-packages/xhtml2pdf-0.2b1-py2.7.egg/xhtml2pdf/parser.py", line 593, in pisaLoop
+    pisaLoop(nnode, context, path, **kw)
+  File "/Library/Python/2.7/site-packages/xhtml2pdf-0.2b1-py2.7.egg/xhtml2pdf/parser.py", line 593, in pisaLoop
+    pisaLoop(nnode, context, path, **kw)
+  File "/Library/Python/2.7/site-packages/xhtml2pdf-0.2b1-py2.7.egg/xhtml2pdf/parser.py", line 537, in pisaLoop
+    CSS2Frag(context, kw, isBlock)
+  File "/Library/Python/2.7/site-packages/xhtml2pdf-0.2b1-py2.7.egg/xhtml2pdf/parser.py", line 285, in CSS2Frag
+    c.frag.fontSize = max(getSize("".join(c.cssAttr["font-size"]), c.frag.fontSize, c.baseFontSize), 1.0)
+TypeError: sequence item 0: expected string or Unicode, tuple found
+Internal Server Error: /pdf/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/channels/handler.py", line 240, in process_exception_by_middleware
+    return super(AsgiHandler, self).process_exception_by_middleware(exception, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/eugenemekhedov/Documents/TFF/School/School/views.py", line 107, in pdf
+    'results': results,
+  File "/Users/eugenemekhedov/Documents/TFF/School/School/views.py", line 94, in render_to_pdf
+    pdf = pisa.pisaDocument(StringIO.StringIO(html.encode("ISO-8859-1")), result)
+  File "/Library/Python/2.7/site-packages/xhtml2pdf-0.2b1-py2.7.egg/xhtml2pdf/document.py", line 97, in pisaDocument
+    encoding, context=context, xml_output=xml_output)
+  File "/Library/Python/2.7/site-packages/xhtml2pdf-0.2b1-py2.7.egg/xhtml2pdf/document.py", line 59, in pisaStory
+    pisaParser(src, context, default_css, xhtml, encoding, xml_output)
+  File "/Library/Python/2.7/site-packages/xhtml2pdf-0.2b1-py2.7.egg/xhtml2pdf/parser.py", line 702, in pisaParser
+    context.parseCSS()
+  File "/Library/Python/2.7/site-packages/xhtml2pdf-0.2b1-py2.7.egg/xhtml2pdf/context.py", line 522, in parseCSS
+    self.css = self.cssParser.parse(self.cssText)
+  File "/Library/Python/2.7/site-packages/xhtml2pdf-0.2b1-py2.7.egg/xhtml2pdf/w3c/cssParser.py", line 443, in parse
+    src, stylesheet = self._parseStylesheet(src)
+  File "/Library/Python/2.7/site-packages/xhtml2pdf-0.2b1-py2.7.egg/xhtml2pdf/w3c/cssParser.py", line 542, in _parseStylesheet
+    src, atResults = self._parseAtKeyword(src)
+  File "/Library/Python/2.7/site-packages/xhtml2pdf-0.2b1-py2.7.egg/xhtml2pdf/w3c/cssParser.py", line 662, in _parseAtKeyword
+    src, result = self._parseAtPage(src)
+  File "/Library/Python/2.7/site-packages/xhtml2pdf-0.2b1-py2.7.egg/xhtml2pdf/w3c/cssParser.py", line 773, in _parseAtPage
+    result = [self.cssBuilder.atPage(page, pseudopage, properties)]
+  File "/Library/Python/2.7/site-packages/xhtml2pdf-0.2b1-py2.7.egg/xhtml2pdf/context.py", line 266, in atPage
+    raise RuntimeError("Unknown size value for @page")
+RuntimeError: Unknown size value for @page
+Internal Server Error: /admin/apply/destribution/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/channels/handler.py", line 240, in process_exception_by_middleware
+    return super(AsgiHandler, self).process_exception_by_middleware(exception, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 544, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
+    return view(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1569, in changelist_view
+    response = self.response_action(request, queryset=cl.get_queryset(request))
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1305, in response_action
+    response = func(self, request, queryset)
+  File "/Users/eugenemekhedov/Documents/TFF/School/apply/admin.py", line 496, in send_certificates
+    member
+  File "/Users/eugenemekhedov/Documents/TFF/School/apply/admin.py", line 480, in render_to_pdf
+    email.send()
+  File "/Library/Python/2.7/site-packages/django/core/mail/message.py", line 342, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/Library/Python/2.7/site-packages/django/core/mail/backends/smtp.py", line 107, in send_messages
+    sent = self._send(message)
+  File "/Library/Python/2.7/site-packages/django/core/mail/backends/smtp.py", line 121, in _send
+    message = email_message.message()
+  File "/Library/Python/2.7/site-packages/django/core/mail/message.py", line 306, in message
+    msg = self._create_message(msg)
+  File "/Library/Python/2.7/site-packages/django/core/mail/message.py", line 394, in _create_message
+    return self._create_attachments(msg)
+  File "/Library/Python/2.7/site-packages/django/core/mail/message.py", line 407, in _create_attachments
+    msg.attach(self._create_attachment(*attachment))
+  File "/Library/Python/2.7/site-packages/django/core/mail/message.py", line 449, in _create_attachment
+    attachment = self._create_mime_attachment(content, mimetype)
+  File "/Library/Python/2.7/site-packages/django/core/mail/message.py", line 437, in _create_mime_attachment
+    Encoders.encode_base64(attachment)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/email/encoders.py", line 45, in encode_base64
+    encdata = _bencode(orig)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/email/encoders.py", line 31, in _bencode
+    hasnewline = (s[-1] == '\n')
+TypeError: 'pisaContext' object does not support indexing
+Internal Server Error: /admin/apply/destribution/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/channels/handler.py", line 240, in process_exception_by_middleware
+    return super(AsgiHandler, self).process_exception_by_middleware(exception, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 544, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
+    return view(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1569, in changelist_view
+    response = self.response_action(request, queryset=cl.get_queryset(request))
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1305, in response_action
+    response = func(self, request, queryset)
+  File "/Users/eugenemekhedov/Documents/TFF/School/apply/admin.py", line 446, in send_email
+    "\nLet's stay in touch! Summer school starts 12 July. You'll receive further information on your email and also at " + project + "\n See you later!"
+AttributeError: 'Destribution' object has no attribute 'name'
+Internal Server Error: /admin/apply/destribution/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/channels/handler.py", line 240, in process_exception_by_middleware
+    return super(AsgiHandler, self).process_exception_by_middleware(exception, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 544, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
+    return view(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1569, in changelist_view
+    response = self.response_action(request, queryset=cl.get_queryset(request))
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1305, in response_action
+    response = func(self, request, queryset)
+  File "/Users/eugenemekhedov/Documents/TFF/School/apply/admin.py", line 446, in send_email
+    "\nLet's stay in touch! Summer school starts 12 July. You'll receive further information on your email and also at " + project + "\n See you later!"
+AttributeError: 'Destribution' object has no attribute 'name'
+Internal Server Error: /admin/apply/destribution/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/channels/handler.py", line 240, in process_exception_by_middleware
+    return super(AsgiHandler, self).process_exception_by_middleware(exception, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 544, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
+    return view(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1569, in changelist_view
+    response = self.response_action(request, queryset=cl.get_queryset(request))
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1305, in response_action
+    response = func(self, request, queryset)
+  File "/Users/eugenemekhedov/Documents/TFF/School/apply/admin.py", line 446, in send_email
+    "\nLet's stay in touch! Summer school starts 12 July. You'll receive further information on your email and also at " + project + "\n See you later!"
+TypeError: coercing to Unicode: need string or buffer, long found
+Internal Server Error: /admin/apply/destribution/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/channels/handler.py", line 240, in process_exception_by_middleware
+    return super(AsgiHandler, self).process_exception_by_middleware(exception, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 544, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
+    return view(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1569, in changelist_view
+    response = self.response_action(request, queryset=cl.get_queryset(request))
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1305, in response_action
+    response = func(self, request, queryset)
+  File "/Users/eugenemekhedov/Documents/TFF/School/apply/admin.py", line 446, in send_email
+    "\nLet's stay in touch! Summer school starts 12 July. You'll receive further information on your email and also at " + project + "\n See you later!"
+TypeError: coercing to Unicode: need string or buffer, long found
+Internal Server Error: /admin/apply/destribution/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/channels/handler.py", line 240, in process_exception_by_middleware
+    return super(AsgiHandler, self).process_exception_by_middleware(exception, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 544, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
+    return view(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1569, in changelist_view
+    response = self.response_action(request, queryset=cl.get_queryset(request))
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1305, in response_action
+    response = func(self, request, queryset)
+  File "/Users/eugenemekhedov/Documents/TFF/School/apply/admin.py", line 446, in send_email
+    "\nLet's stay in touch! Summer school starts 12 July. You'll receive further information on your email and also at " + project + "\n See you later!"
+TypeError: coercing to Unicode: need string or buffer, long found
+Internal Server Error: /admin/apply/destribution/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/channels/handler.py", line 240, in process_exception_by_middleware
+    return super(AsgiHandler, self).process_exception_by_middleware(exception, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 544, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
+    return view(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1569, in changelist_view
+    response = self.response_action(request, queryset=cl.get_queryset(request))
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1305, in response_action
+    response = func(self, request, queryset)
+  File "/Users/eugenemekhedov/Documents/TFF/School/apply/admin.py", line 446, in send_email
+    "\nLet's stay in touch! Summer school starts 12 July. You'll receive further information on your email and also at " + project + "\n See you later!"
+TypeError: coercing to Unicode: need string or buffer, long found
+Internal Server Error: /admin/apply/destribution/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/channels/handler.py", line 240, in process_exception_by_middleware
+    return super(AsgiHandler, self).process_exception_by_middleware(exception, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 544, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
+    return view(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1569, in changelist_view
+    response = self.response_action(request, queryset=cl.get_queryset(request))
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1305, in response_action
+    response = func(self, request, queryset)
+  File "/Users/eugenemekhedov/Documents/TFF/School/apply/admin.py", line 446, in send_email
+    "\nLet's stay in touch! Summer school starts 12 July. You'll receive further information on your email and also at " + project + "\n See you later!"
+TypeError: coercing to Unicode: need string or buffer, long found
+Internal Server Error: /admin/apply/destribution/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/channels/handler.py", line 240, in process_exception_by_middleware
+    return super(AsgiHandler, self).process_exception_by_middleware(exception, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 544, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
+    return view(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1569, in changelist_view
+    response = self.response_action(request, queryset=cl.get_queryset(request))
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1305, in response_action
+    response = func(self, request, queryset)
+  File "/Users/eugenemekhedov/Documents/TFF/School/apply/admin.py", line 445, in send_email
+    " You have contributed to " + project + "\nHere you login data:\nlogin: " + member.member_id.name + "\npassword:" + member.member_id.id + member.member_id.name +"\nYou can change it on personal page -> edit profile" \
+TypeError: coercing to Unicode: need string or buffer, long found
+Internal Server Error: /admin/apply/destribution/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/channels/handler.py", line 240, in process_exception_by_middleware
+    return super(AsgiHandler, self).process_exception_by_middleware(exception, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 544, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
+    return view(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1569, in changelist_view
+    response = self.response_action(request, queryset=cl.get_queryset(request))
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1305, in response_action
+    response = func(self, request, queryset)
+  File "/Users/eugenemekhedov/Documents/TFF/School/apply/admin.py", line 445, in send_email
+    " You have contributed to " + project.project_name + "\nHere you login data:\nlogin: " + member.member_id.name + "\npassword:" + member.member_id.id + member.member_id.name +"\nYou can change it on personal page -> edit profile" \
+TypeError: coercing to Unicode: need string or buffer, long found
+Internal Server Error: /admin/apply/destribution/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/channels/handler.py", line 240, in process_exception_by_middleware
+    return super(AsgiHandler, self).process_exception_by_middleware(exception, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 544, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
+    return view(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1569, in changelist_view
+    response = self.response_action(request, queryset=cl.get_queryset(request))
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1305, in response_action
+    response = func(self, request, queryset)
+  File "/Users/eugenemekhedov/Documents/TFF/School/apply/admin.py", line 445, in send_email
+    " You have contributed to " + project.project_name + "\nHere you login data:\nlogin: " + member.member_id.name + "\npassword:" + member.member_id.id + member.member_id.name +"\nYou can change it on personal page -> edit profile" \
+TypeError: coercing to Unicode: need string or buffer, long found
+Internal Server Error: /admin/apply/destribution/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/channels/handler.py", line 240, in process_exception_by_middleware
+    return super(AsgiHandler, self).process_exception_by_middleware(exception, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 544, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
+    return view(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1569, in changelist_view
+    response = self.response_action(request, queryset=cl.get_queryset(request))
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1305, in response_action
+    response = func(self, request, queryset)
+  File "/Users/eugenemekhedov/Documents/TFF/School/apply/admin.py", line 445, in send_email
+    " You have contributed to " + project.project_name + "\nHere you login data:\nlogin: " + member.member_id.name + "\npassword:" + member.member_id.id + member.member_id.name +"\nYou can change it on personal page -> edit profile" \
+TypeError: coercing to Unicode: need string or buffer, long found
+Internal Server Error: /admin/apply/destribution/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/channels/handler.py", line 240, in process_exception_by_middleware
+    return super(AsgiHandler, self).process_exception_by_middleware(exception, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 544, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
+    return view(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1569, in changelist_view
+    response = self.response_action(request, queryset=cl.get_queryset(request))
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1305, in response_action
+    response = func(self, request, queryset)
+  File "/Users/eugenemekhedov/Documents/TFF/School/apply/admin.py", line 445, in send_email
+    " You have contributed to " + "project_name " + "\nHere you login data:\nlogin: " + member.member_id.name + "\npassword:" + member.member_id.id + member.member_id.name +"\nYou can change it on personal page -> edit profile" \
+TypeError: coercing to Unicode: need string or buffer, long found
+Internal Server Error: /admin/apply/destribution/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/channels/handler.py", line 240, in process_exception_by_middleware
+    return super(AsgiHandler, self).process_exception_by_middleware(exception, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 544, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
+    return view(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1569, in changelist_view
+    response = self.response_action(request, queryset=cl.get_queryset(request))
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1305, in response_action
+    response = func(self, request, queryset)
+  File "/Users/eugenemekhedov/Documents/TFF/School/apply/admin.py", line 495, in send_certificates
+    member
+  File "/Users/eugenemekhedov/Documents/TFF/School/apply/admin.py", line 479, in render_to_pdf
+    email.send()
+  File "/Library/Python/2.7/site-packages/django/core/mail/message.py", line 342, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/Library/Python/2.7/site-packages/django/core/mail/backends/smtp.py", line 107, in send_messages
+    sent = self._send(message)
+  File "/Library/Python/2.7/site-packages/django/core/mail/backends/smtp.py", line 121, in _send
+    message = email_message.message()
+  File "/Library/Python/2.7/site-packages/django/core/mail/message.py", line 306, in message
+    msg = self._create_message(msg)
+  File "/Library/Python/2.7/site-packages/django/core/mail/message.py", line 394, in _create_message
+    return self._create_attachments(msg)
+  File "/Library/Python/2.7/site-packages/django/core/mail/message.py", line 407, in _create_attachments
+    msg.attach(self._create_attachment(*attachment))
+  File "/Library/Python/2.7/site-packages/django/core/mail/message.py", line 449, in _create_attachment
+    attachment = self._create_mime_attachment(content, mimetype)
+  File "/Library/Python/2.7/site-packages/django/core/mail/message.py", line 437, in _create_mime_attachment
+    Encoders.encode_base64(attachment)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/email/encoders.py", line 45, in encode_base64
+    encdata = _bencode(orig)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/email/encoders.py", line 31, in _bencode
+    hasnewline = (s[-1] == '\n')
+TypeError: 'pisaContext' object does not support indexing
+Not Found: /accounts/login/
+Not Found: /accounts/login/
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Forbidden (CSRF token missing or incorrect.): /admin/login/
+Forbidden (CSRF token missing or incorrect.): /admin/login/
+Internal Server Error: /reports/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/channels/handler.py", line 240, in process_exception_by_middleware
+    return super(AsgiHandler, self).process_exception_by_middleware(exception, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/eugenemekhedov/Documents/TFF/School/afterSchool/views.py", line 16, in reportList
+    return render(request, 'reportList.html', args)
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 208, in render
+    return self._render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/loader_tags.py", line 174, in render
+    return compiled_parent._render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/loader_tags.py", line 70, in render
+    result = block.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/defaulttags.py", line 217, in render
+    nodelist.append(node.render_annotated(context))
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 1044, in render
+    output = self.filter_expression.resolve(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 711, in resolve
+    obj = self.var.resolve(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 852, in resolve
+    value = self._resolve_lookup(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+  File "/Library/Python/2.7/site-packages/django/db/models/fields/files.py", line 68, in _get_url
+    self._require_file()
+  File "/Library/Python/2.7/site-packages/django/db/models/fields/files.py", line 46, in _require_file
+    raise ValueError("The '%s' attribute has no file associated with it." % self.field.name)
+ValueError: The 'image' attribute has no file associated with it.
+Internal Server Error: /reports/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/channels/handler.py", line 240, in process_exception_by_middleware
+    return super(AsgiHandler, self).process_exception_by_middleware(exception, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/eugenemekhedov/Documents/TFF/School/afterSchool/views.py", line 16, in reportList
+    return render(request, 'reportList.html', args)
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 208, in render
+    return self._render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/loader_tags.py", line 174, in render
+    return compiled_parent._render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/loader_tags.py", line 70, in render
+    result = block.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/defaulttags.py", line 217, in render
+    nodelist.append(node.render_annotated(context))
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 1044, in render
+    output = self.filter_expression.resolve(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 711, in resolve
+    obj = self.var.resolve(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 852, in resolve
+    value = self._resolve_lookup(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+  File "/Library/Python/2.7/site-packages/django/db/models/fields/files.py", line 68, in _get_url
+    self._require_file()
+  File "/Library/Python/2.7/site-packages/django/db/models/fields/files.py", line 46, in _require_file
+    raise ValueError("The '%s' attribute has no file associated with it." % self.field.name)
+ValueError: The 'image' attribute has no file associated with it.

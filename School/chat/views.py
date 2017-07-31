@@ -1,6 +1,8 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
+
+from School.functions import get_all_projects
 from .models import Room, Message
 from django.contrib.auth.models import User
 from django.core.exceptions import ObjectDoesNotExist
@@ -11,6 +13,7 @@ from django.core import serializers
 @login_required
 def chatRooms(request):
     args = {}
+    args['projects'] = get_all_projects()
 
     user = request.user
 
@@ -49,6 +52,7 @@ def chatRooms(request):
 @login_required
 def chatRoom(request, friendID):
     args = {}
+    args['projects'] = get_all_projects()
     try:
         roomID = int(str(request.user.id) + friendID)
         room = Room.objects.get(id=roomID)
@@ -91,7 +95,7 @@ def chatRoom(request, friendID):
 
 def groupChat(request):
     args = {}
-
+    args['projects'] = get_all_projects()
     user = request.user
     project = None
     for currentProject in Project.objects.all():

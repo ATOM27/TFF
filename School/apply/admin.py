@@ -427,7 +427,7 @@ def distribution_of_participants_best(modeladmin, request, queryset):
 distribution_of_participants.short_description = "Genetic"
 distribution_of_participants_best.short_description = "Emperic"
 
-from machina.apps.forum_member.models import ForumProfile
+# from machina.apps.forum_member.models import ForumProfile
 
 def registerUsers(member, project):
     passForNewUser= str(member.id) + member.name
@@ -435,25 +435,67 @@ def registerUsers(member, project):
         newUser = User.objects.create_user(id=member.id, username=member.name, email=member.email,
                                                            password=passForNewUser)
         newUser.save()
-        ForumProfile(user=newUser).save()
+        # ForumProfile(user=newUser).save()
         project.members.add(newUser)
 
 def send_email(modeladmin, request, queryset):
     for member in queryset:
         project = member.project_id.project_name
         message_text = "Dear " + member.member_id.name + ",\nWe congratulate you on joining our school Technology For Future 2017 this year! Thank you for your interest in Technology For Future Program 2016 and application for our projects." \
-                                                         " You have contributed to " + project + "\nHere you login data:\nlogin: " + member.name + "\npassword:" + member.id + member.name +"\nYou can change it on personal page -> edit profile" \
-                                                         "\nLet's stay in touch! Summer school starts 12 July. You'll receive further information on your email and also at " + project + "\n See you later!"
+                                                         " You have contributed to " + str(project) + "\nHere you login data:\nlogin: " + str(member.member_id.name) + "\npassword:" + str(member.member_id.id) + str(member.member_id.name) +"\nYou can change it on personal page -> edit profile" \
+                                                         "\nLet's stay in touch! Summer school starts 12 July. You'll receive further information on your email and also at your project" + str(project) + "\n See you later!"
 
-        print message_text
         send_mail("Conglaturations!", message_text, 'summerschooltff@gmail.com', [member.member_id.email], fail_silently=False )
     applyApplications = applyApplication.objects.exclude(id__in=[o.member_id.id for o in queryset])
     for memb in applyApplications:
-        message_text = "Dear " + memb.name + "\nThank you for your interest in Technology For Future 2017 and application for our projects. Unfortunately, we can't invite you to the next step this time." \
+        message_text = "Dear " + str(memb.name) + "\nThank you for your interest in Technology For Future 2017 and application for our projects. Unfortunately, we can't invite you to the next step this time." \
                                                          "\nLet's stay in touch. Follow our Facebook page.\n Thank you very much for your consideration. We look forward to hearing from you next year."
         send_mail("TFF", message_text, 'summerschooltff@gmail.com', [memb.email], fail_silently=False)
 
 send_email.short_description = "Send emails for ivitation to the projects"
+
+
+import cStringIO as StringIO
+from xhtml2pdf import pisa
+from django.template.loader import get_template
+from django.template import Context
+from django.http import HttpResponse
+from cgi import escape
+from django.core.mail import EmailMessage
+
+
+def render_to_pdf(template_src, context_dict, member):
+    template = get_template(template_src)
+    context = Context(context_dict)
+    html  = template.render(context)
+    result = StringIO.StringIO()
+
+    pdf = pisa.pisaDocument(StringIO.StringIO(html.encode("ISO-8859-1")), result)
+    if not pdf.err:
+        response = HttpResponse(result.getvalue(), content_type='application/pdf')
+        response['Content-Disposition'] = 'filename="certificate.pdf"'
+        email = EmailMessage('Technology for Future', 'Conglaturations!\nHere is you certificate!', 'summerschooltff@gmail.com', [member.member_id.email])
+        email.attach('certificate.pdf', result.getvalue(), 'application/pdf')
+        email.send()
+
+    return HttpResponse('We had some errors<pre>%s</pre>' % escape(html))
+
+def send_certificates(modeladmin, request, queryset):
+
+    for member in queryset:
+        results = {}
+        results['name'] = member.member_id.name
+        results['surname'] = member.member_id.surname
+
+        render_to_pdf(
+            'certificate.html',
+            {
+                'results': results,
+            },
+            member
+        )
+
+send_certificates.short_description = "Send emails with certificates"
 
 
 class applyApplicationAdmin(admin.ModelAdmin):
@@ -470,7 +512,7 @@ class testsApplyAdmin(admin.ModelAdmin):
 
 class DestributionAdmin(admin.ModelAdmin):
     list_display = ['member_id', "project_id"]
-    actions = [send_email]
+    actions = [send_email, send_certificates]
 
 admin.site.register(applyApplication, applyApplicationAdmin)
 admin.site.register(testsApply, testsApplyAdmin)

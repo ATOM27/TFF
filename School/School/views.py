@@ -98,11 +98,13 @@ def render_to_pdf(template_src, context_dict):
 
 def pdf(request):
     results = {}
+    results['name'] = applyApplication.objects.get(id=request.user.id).name
+    results['surname'] = applyApplication.objects.get(id=request.user.id).surname
+
     return render_to_pdf(
-        'mytemplate.html',
+        'certificate.html',
         {
-            'pagesize': 'A4',
-            'mylist': results,
+            'results': results,
         }
     )
 

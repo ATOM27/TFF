@@ -20,7 +20,7 @@ class reportComments(models.Model):
 
 class ReportProject(models.Model):
     title = models.CharField(max_length=500)
-    image = models.ImageField(blank=True, upload_to="images/",)
+    image = models.ImageField(upload_to="images/",)
     project = models.ForeignKey(Project)
     comment = models.ManyToManyField(reportComments, blank=True)
     text = RichTextUploadingField()
